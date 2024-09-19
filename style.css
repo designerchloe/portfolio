@@ -1,0 +1,441 @@
+/* global styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    color: #EBE9E2;
+}
+
+body {
+    background-color: #323232;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: calc(3rem + 3vw);
+    letter-spacing: 0.04em;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: calc(1rem + 1vw);
+    line-height: 100%;
+}
+
+p {
+    font-size: calc(0.75rem + 0.5vw);
+    font-weight: 300;
+    line-height: 140%;
+}
+
+span {
+    font-size: clamp(12px, calc(0.5rem + 0.5vw), calc(0.5rem + 0.5vw));
+}
+
+.tag {
+    padding: 4px 12px;
+    /* border: 1px solid rgba(255, 255, 255, 0.2); */
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #F6F4E7;
+    font-weight: 300;
+}
+
+/* logo and header */
+
+header {
+    padding: 40px;
+    height: 100vh;
+    min-height: 800px;
+    background: linear-gradient(180deg, #232323 0%, #323232 100%);
+}
+
+#logo {
+    height: 24px;
+}
+
+#title {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#header-1 {
+    margin: 0 0 0 -40vw;
+}
+
+#header-2 {
+    margin: 0 0 0 24vw;
+    white-space: nowrap;
+}
+
+#header-3 {
+   margin: 12vh 0 0 -10vw;
+   white-space: nowrap;
+}
+
+#header-4 {
+    display: inline-block;
+    margin: 0 0 32px 32vw;
+    width: 40vw;
+}
+
+
+
+
+/* main sections */
+
+main {
+    padding: 0 64px;
+}
+
+/* tab navigation */
+
+nav {
+    display: flex;
+    gap: calc(0.75rem + 1vw);
+}
+
+nav::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+nav a{
+    font-size: calc(1.5rem + 3vw);
+    font-weight: 500;
+    opacity: 0.3;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: opacity 300ms ease-out;
+}
+
+nav a:hover {
+    opacity: 0.6;
+}
+
+.selected {
+    opacity: 1;
+}
+
+.selected:hover {
+    opacity: 1;
+}
+
+/* work section */
+
+.project {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 64px;
+    margin: 64px 0 88px 0;
+}
+
+@keyframes fadeIn {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.fade-in {
+    animation: 0.75s both fadeIn;
+}
+
+.left {
+    flex-direction: row-reverse;
+}
+
+.project-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.project-text p {
+    max-width: 900px;
+}
+
+.tag-container {
+    display: flex;
+    gap: 12px;
+    margin: 4px 0;
+}
+
+.placeholder {
+    aspect-ratio: 3 / 2;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+/* play section */
+
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 32px;
+    padding: 32px 0;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.post {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-text {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+.post-text p {
+    font-size: clamp(12px, calc(0.5rem + 0.5vw), calc(0.5rem + 0.5vw));
+}
+
+.medium-gap {
+    gap: 20px;
+}
+
+.small-gap {
+    gap: 16px;
+}
+
+#play img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* media queries */
+
+@media only screen and (min-width: 1700px) {
+    main {
+        max-width: 90vw;
+        margin: 0 auto;
+    }
+
+    .project {
+        gap: 128px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    header {
+        height: 90vh;
+        min-height: 700px;
+    }
+
+    #header-1 {
+        margin: 0 0 0 -46vw;
+    }
+
+    #header-2 {
+        margin: 0 0 0 18vw;
+    }
+
+    #header-3 {
+        margin: 12vh 0 0 -16vw;
+    }
+
+    #header-4 {
+        margin: 0 0 32px 40vw;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    header {
+        height: 80vh;
+        min-height: 600px;
+    }
+
+    h1 {
+        font-size: calc(2rem + 3vw);
+    }
+
+    p {
+        font-size: calc(0.7rem + 0.5vw);
+    }
+
+    #header-3 {
+        margin: 8vh 0 0 -16vw;
+    }
+
+    #header-4 {
+        width: 50vw;
+        margin: 0 0 18px 36vw;
+    }
+
+    .project {
+        flex-direction: column-reverse;
+        gap: 16px;
+        margin: 44px 0 56px 0;
+    }
+
+    .project-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .tag-container {
+        display: flex;
+        gap: 12px;
+        margin: 4px 0;
+    }
+    
+    .placeholder {
+        aspect-ratio: 3 / 2;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        padding: 20px;
+        height: 80vh;
+        min-height: 600px;
+    }
+
+    h1 {
+        font-size: calc(1.5rem + 3vw);
+    }
+
+    p {
+        font-size: clamp(14px, calc(0.6rem + 0.5vw), calc(0.6rem + 0.5vw));
+    }
+
+    #header-1 {
+        margin: 0 0 0 -40vw;
+    }
+
+    #header-2 {
+        margin: 0 0 0 12vw;
+    }
+
+    #header-3 {
+        margin: 6vh 0 0 -12vw;
+    }
+
+    #header-4 {
+        margin: 0 0 12px 32vw;
+        width: 60vw;
+    }
+
+    main {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    header {
+        padding: 20px;
+        height: 70vh;
+        min-height: 500px;
+    }
+
+    h1 {
+        font-size: calc(1rem + 4vw);
+    }
+
+    p {
+        font-size: clamp(12px, calc(0.6rem + 0.5vw), calc(0.6rem + 0.5vw));
+    }
+
+    #title {
+        align-items: flex-start;
+    }
+
+    #header-1 {
+        margin: 0;
+        white-space: wrap;
+    }
+
+    #header-2 {
+        margin: 0;
+        text-align: right;
+        width: 100%;
+        white-space: wrap;
+    }
+
+    #header-3 {
+        margin: 4vh 0 0 0;
+        white-space: wrap;
+    }
+
+    #header-4 {
+        margin: 0 0 32px 20vw;
+        width: 70vw;
+    }
+
+    main {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 318px) {
+
+    header {
+        padding: 20px;
+        height: 60vh;
+        min-height: 400px;
+    }
+
+    h1 {
+        font-size: calc(0.5rem + 5vw);
+    }
+
+    #header-2 {
+        margin: 0;
+        text-align: left;
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    #header-3 {
+        margin: 2vh 0 0 0;
+        white-space: wrap;
+    }
+
+    #header-4 {
+        margin: 0 0 32px 0;
+        width: 80vw;
+    }
+
+    nav a{
+        font-size: calc(1.35rem + 3vw);
+    }
+
+    nav {
+        overflow: scroll;
+    }
+}
