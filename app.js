@@ -36,6 +36,30 @@ if (elementsToFadeIn) {
   });
 }
 
+//cursor
+
+let mouseCursor = document.querySelector('#cursor');
+
+function cursor(e) {
+    mouseCursor.style.display = '';
+    mouseCursor.style.top = e.pageY + 'px';
+    mouseCursor.style.left = e.pageX + 'px';
+};
+
+function disappear() {
+    mouseCursor.style.display = 'none';
+}
+
+// window.addEventListener('mousemove', cursor);
+
+elementsToFadeIn.forEach(function(element) {
+    element.addEventListener('mousemove', cursor);
+});
+
+elementsToFadeIn.forEach(function(element) {
+    element.addEventListener('mouseout', disappear);
+});
+
 
 //masonry grid
 
