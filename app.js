@@ -41,19 +41,24 @@ if (elementsToFadeIn) {
 let mouseCursor = document.querySelector('#cursor');
 
 function cursor(e) {
-    mouseCursor.style.display = '';
+    mouseCursor.classList.remove('fade-out');
+    mouseCursor.classList.add('fade');
+    mouseCursor.style.opacity = '1';
     mouseCursor.style.top = e.pageY + 'px';
     mouseCursor.style.left = e.pageX + 'px';
 };
 
 function disappear() {
-    mouseCursor.style.display = 'none';
+    mouseCursor.classList.remove('fade');
+    mouseCursor.classList.add('fade-out');
+    mouseCursor.style.opacity = "0";
 }
 
 // window.addEventListener('mousemove', cursor);
 
 elementsToFadeIn.forEach(function(element) {
     element.addEventListener('mousemove', cursor);
+    // element.addEventListener('wheel', cursor);
 });
 
 elementsToFadeIn.forEach(function(element) {

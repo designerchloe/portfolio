@@ -43,6 +43,24 @@ span {
     font-weight: 300;
 }
 
+@keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+    }
+  to {
+      opacity: 0;
+    }
+}
+
 #cursor {
     padding: 4px 12px;
     background-color: rgba(255, 255, 255, 0.08);
@@ -52,7 +70,16 @@ span {
     border-radius: 8px;
     position: absolute;
     transform: translate(12px, -28px);
-    /* transition: background-color 300ms ease-out; */
+    backdrop-filter: blur(10px);
+    opacity: 1;
+}
+
+.fade {
+    animation: 750ms both fade;
+}
+
+.fade-out {
+    animation: 300ms both fadeOut;
 }
 
 /* logo and header */
