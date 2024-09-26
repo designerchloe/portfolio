@@ -8,6 +8,7 @@
 
 html {
     scroll-behavior: smooth;
+    overscroll-behavior: none;
 }
 
 h2 {
@@ -129,7 +130,6 @@ section img {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    scroll-margin-top: 40px;
 }
 
 .tag-container {
@@ -159,4 +159,12 @@ section img {
 
 #key-takeaways ul {
     list-style-position: inside;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    align-items: center;
+    scroll-margin-top: 40px;
 }
