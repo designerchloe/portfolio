@@ -41,6 +41,10 @@ p {
     line-height: 140%;
 }
 
+p.large {
+    font-size: calc(0.75rem + 1vw);
+}
+
 span {
     font-size: clamp(12px, calc(0.5rem + 0.5vw), calc(0.5rem + 0.5vw));
 }
@@ -69,6 +73,8 @@ header {
     padding: 40px;
     height: 32px;
     position: fixed;
+    display: flex;
+    justify-content: space-between;
 }
 
 #logo {
@@ -164,6 +170,7 @@ section video {
 
 .text {
     width: 80%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -181,6 +188,7 @@ section video {
     gap: 44px;
     align-items: center;
     scroll-margin-top: 40px;
+    width: 100%;
 }
 
 #key-takeaways {
@@ -192,10 +200,16 @@ section video {
     width: 80%;
     padding: 24px;
     gap: 8px;
+    max-width: 1200px;
 }
 
 #key-takeaways ul {
     list-style-position: inside;
+}
+
+#key-takeaways li {
+    font-size: calc(0.5rem + 0.5vw);
+    font-weight: 300;
 }
 
 .group {
@@ -204,6 +218,7 @@ section video {
     gap: 44px;
     align-items: center;
     scroll-margin-top: 40px;
+    width: 100%;
 }
 
 #promo {
@@ -218,6 +233,7 @@ section video {
     flex-direction: column;
     width: 75%;
     gap: 8px;
+    max-width: 1200px;
 }
 
 #promo img {
@@ -230,6 +246,7 @@ section video {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    max-width: 1200px;
 }
 
 .quote {
@@ -259,6 +276,7 @@ section video {
     width: 80%;
     border-radius: 8px;
     position: relative;
+    font-size: calc(0.5rem + 0.5vw);
 }
 
 .bubble:after {
@@ -295,7 +313,7 @@ footer {
 }
 
 #socials img {
-    height: 24px;
+    height: calc(0.5rem + 1vw);
 }
 
 
@@ -337,4 +355,139 @@ footer {
 
 .fade-out {
     animation: 300ms both fadeOut;
+}
+
+
+/* media queries */
+
+@media only screen and (min-width: 1700px) {
+    #section-1 {
+        padding: 88px 88px 128px 88px;
+    }
+
+    .group {
+        gap: 88px;
+    }
+
+    section {
+        gap: 136px;
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+    #quote-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .quote {
+        width: 100%;
+    }
+
+    header {
+        background-color: #262626;
+        z-index: 5;
+        width: 100%;
+        filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.25));
+        padding: 28px 28px 44px 28px;
+    }
+
+    .anchor-nav {
+        display: none;
+    }
+
+    main {
+        justify-content: center;
+    }
+
+    #section-container {
+        width: 100%;
+    }
+
+    section {
+        padding: 0;
+    }
+
+    #section-1 {
+        background-color: rgba(0, 0, 0, 0.001);
+        border: 1px solid rgba(0, 0, 0, 0.001);
+    }
+
+    #main-container {
+        background: linear-gradient(180deg, #232323 0%, #323232 25%);
+    }
+
+    .group {
+        gap: 32px;
+    }
+
+    section {
+        gap: 88px;
+    }
+
+    p {
+        font-size: calc(0.75rem + 0.25vw);
+    }
+
+    p.large {
+        font-size: calc(0.75rem + 0.5vw);
+    }
+
+    #quote-container {
+        width: 80%;
+    }
+
+    .bubble {
+        width: 90%;
+    }
+
+    #promo {
+        padding: 16px;
+    }
+
+    #promo img {
+        min-width: 150px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .text {
+        width: 100%;
+    }
+
+    #key-takeaways {
+        width: 100%;
+    }
+
+    #promo {
+        flex-direction: column;
+        gap: 4px;
+        padding-bottom: 36px;
+    }
+
+    #promo img {
+        width: 80%;
+    }
+
+    #promo-text {
+        width: 90%;
+    }
+
+    .group {
+        gap: 24px;
+    }
+
+    section {
+        gap: 64px;
+    }
+
+    #quote-container {
+        width: 100%;
+    }
+
+    #section-1 {
+        padding-bottom: 32px;
+    }
 }
