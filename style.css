@@ -72,6 +72,7 @@ span {
     transform: translate(12px, -28px);
     backdrop-filter: blur(10px);
     opacity: 0;
+    mix-blend-mode: difference;
 }
 
 .fade {
@@ -216,10 +217,9 @@ nav a:hover {
     margin: 4px 0;
 }
 
-.placeholder {
+.project-img {
     aspect-ratio: 3 / 2;
     width: 50%;
-    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 8px;
 }
 
@@ -352,10 +352,9 @@ nav a:hover {
         margin: 4px 0;
     }
     
-    .placeholder {
+    .project-img {
         aspect-ratio: 3 / 2;
         width: 100%;
-        background-color: rgba(255, 255, 255, 0.2);
         border-radius: 8px;
     }
 }

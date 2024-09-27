@@ -61,7 +61,6 @@ function disappear() {
 
 elementsToFadeIn.forEach(function(element) {
     element.addEventListener('mousemove', cursor);
-    // element.addEventListener('wheel', cursor);
 });
 
 elementsToFadeIn.forEach(function(element) {
