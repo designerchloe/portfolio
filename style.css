@@ -71,7 +71,7 @@ span {
     position: absolute;
     transform: translate(12px, -28px);
     backdrop-filter: blur(10px);
-    opacity: 1;
+    opacity: 0;
 }
 
 .fade {
@@ -230,7 +230,7 @@ nav a:hover {
     width: 100%;
     display: flex;
     gap: 32px;
-    padding: 32px 0;
+    padding: 32px 0 80px 0;
 }
 
 .column {
@@ -481,4 +481,23 @@ nav a:hover {
     nav {
         overflow: scroll;
     }
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 40px;
+    align-items: center;
+    color: #BEB8AA;
+}
+
+#socials {
+    display: flex;
+    gap: 16px;
+}
+
+#socials img {
+    height: 24px;
 }

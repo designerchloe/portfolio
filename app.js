@@ -39,8 +39,10 @@ if (elementsToFadeIn) {
 //cursor
 
 let mouseCursor = document.querySelector('#cursor');
+mouseCursor.style.display = 'none';
 
 function cursor(e) {
+    mouseCursor.style.display = '';
     mouseCursor.classList.remove('fade-out');
     mouseCursor.classList.add('fade');
     mouseCursor.style.opacity = '1';
@@ -49,6 +51,7 @@ function cursor(e) {
 };
 
 function disappear() {
+    mouseCursor.style.display = '';
     mouseCursor.classList.remove('fade');
     mouseCursor.classList.add('fade-out');
     mouseCursor.style.opacity = "0";

@@ -233,3 +233,24 @@ section video {
 	margin-left: -15px;
     transform: rotate(270deg);
 }
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 40px;
+    align-items: center;
+    color: #BEB8AA;
+    position: relative;
+    z-index: 3;
+}
+
+#socials {
+    display: flex;
+    gap: 16px;
+}
+
+#socials img {
+    height: 24px;
+}
