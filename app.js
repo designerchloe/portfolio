@@ -2,23 +2,39 @@
 
 const workTab = document.querySelector('a.work');
 const playTab = document.querySelector('a.play');
+const aboutTab = document.querySelector('a.about');
 const work = document.querySelector('#work');
 const play = document.querySelector('#play');
+const about = document.querySelector('#about');
 
 play.style.display = 'none';
+about.style.display = 'none';
 
 playTab.addEventListener('click', () => {
     work.style.display = 'none';
+    about.style.display = 'none';
     play.style.display = '';
     playTab.classList.add('selected');
     workTab.classList.remove('selected');
+    aboutTab.classList.remove('selected');
 });
 
 workTab.addEventListener('click', () => {
-    work.style.display = '';
     play.style.display = 'none';
+    about.style.display = 'none';
+    work.style.display = '';
     playTab.classList.remove('selected');
     workTab.classList.add('selected');
+    aboutTab.classList.remove('selected');
+});
+
+aboutTab.addEventListener('click', () => {
+    work.style.display = 'none';
+    play.style.display = 'none';
+    about.style.display = '';
+    aboutTab.classList.add('selected');
+    workTab.classList.remove('selected');
+    playTab.classList.remove('selected');
 });
 
 //work section fade ins
@@ -155,3 +171,24 @@ window.addEventListener('load', () => {
 })
 
 generateGrid(3, posts);
+
+//copy email
+
+const email = document.querySelector('#email').innerHTML;
+const emailLink = document.querySelector('#email-link');
+
+function copyEmail() {
+  navigator.clipboard.writeText(email);
+  console.log('copied to clipboard');
+}
+
+emailLink.addEventListener('click', copyEmail);
+let icon = document.querySelector('.icon-sm');
+
+emailLink.addEventListener('mouseover', () => {
+    icon.style.opacity = 1;
+})
+
+emailLink.addEventListener('mouseout', () => {
+    icon.style.opacity = 0;
+})
