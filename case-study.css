@@ -51,11 +51,12 @@ span {
 
 .tag {
     padding: 4px 12px;
-    /* border: 1px solid rgba(255, 255, 255, 0.2); */
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.08);
     color: #F6F4E7;
     font-weight: 300;
+    display: flex;
+    align-items: center;
 }
 
 body {
@@ -314,6 +315,7 @@ footer {
 
 #socials img {
     height: calc(0.5rem + 1vw);
+    min-height: 16px;
 }
 
 
@@ -493,6 +495,15 @@ footer {
 
     #section-1 {
         padding-bottom: 32px;
+    }
+
+    .avatar {
+        padding: 4px;
+    }
+    
+    .avatar img {
+        height: 16px;
+        width: 16px;
     }
 }
 
