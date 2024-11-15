@@ -104,24 +104,154 @@ header {
     margin: 0 auto;
 }
 
+.title-text {
+    transition: opacity 300ms ease-out;
+    z-index: 10;
+}
+
 #header-1 {
     margin: 0 0 0 -40vw;
+    max-height: 120px;
 }
 
 #header-2 {
     margin: 0 0 0 24vw;
     white-space: nowrap;
+    max-height: 120px;
 }
 
 #header-3 {
    margin: 12vh 0 0 -10vw;
    white-space: nowrap;
+   max-height: 120px;
 }
 
 #header-4 {
     display: inline-block;
     margin: 0 0 32px 32vw;
     width: 40vw;
+}
+
+.header-img {
+    background-color: #fff;
+    width: calc(3rem + 3vw);
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 300ms ease-out;
+    visibility: hidden;
+}
+
+.tall {
+    aspect-ratio: 2 / 3;
+}
+
+.square {
+    aspect-ratio: 1 / 1;
+}
+
+.large {
+    aspect-ratio: 1 / 1;
+    min-width: calc(6rem + 6vw);
+}
+
+#ux-designer-images {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 10px;
+}
+
+#ux-design-1 {
+    position: relative;
+    top: -4vw;
+    left: -4vw;
+}
+
+#ux-design-2 {
+    position: relative;
+    top: -7vw;
+    left: 34vw;
+}
+
+#ux-design-3 {
+    position: relative;
+    top: -18vw;
+    left: 27vw;
+}
+
+#ux-design-4 {
+    position: relative;
+    top: -40vw;
+    left: 40vw;
+}
+
+#creative-developer-images {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 10px;
+}
+
+#creative-dev-1 {
+    position: relative;
+    top: -7vw;
+    left: -8vw;
+}
+
+#creative-dev-2 {
+    position: relative;
+    top: -4vw;
+    left: 7vw;
+}
+
+#creative-dev-3 {
+    position: relative;
+    top: -22vw;
+    left: 25vw;
+}
+
+#creative-dev-4 {
+    position: relative;
+    top: -24vw;
+    left: 28vw;
+}
+
+#creative-dev-5 {
+    position: relative;
+    top: -50vw;
+    left: 36vw;
+}
+
+
+#ar-enthusiast-images {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 10px;
+}
+
+#ar-enthusiast-1 {
+    position: relative;
+    top: -10vw;
+    left: -14vw;
+}
+
+#ar-enthusiast-2 {
+    position: relative;
+    top: -26vw;
+    left: 0vw;
+}
+
+#ar-enthusiast-3 {
+    position: relative;
+    top: -21vw;
+    left: 11vw;
+}
+
+#ar-enthusiast-4 {
+    position: relative;
+    top: -24vw;
+    left: 16vw;
 }
 
 
