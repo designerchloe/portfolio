@@ -133,7 +133,6 @@ header {
 }
 
 .header-img {
-    background-color: #fff;
     width: calc(3rem + 3vw);
     border-radius: 8px;
     opacity: 0;
@@ -152,6 +151,10 @@ header {
 .large {
     aspect-ratio: 1 / 1;
     min-width: calc(6rem + 6vw);
+}
+
+.wide {
+    min-width: calc(12rem + 12vw);
 }
 
 #ux-designer-images {
@@ -181,7 +184,7 @@ header {
 
 #ux-design-4 {
     position: relative;
-    top: -40vw;
+    top: 0vw;
     left: 40vw;
 }
 
@@ -213,13 +216,7 @@ header {
 #creative-dev-4 {
     position: relative;
     top: -24vw;
-    left: 28vw;
-}
-
-#creative-dev-5 {
-    position: relative;
-    top: -50vw;
-    left: 36vw;
+    left: 12vw;
 }
 
 
