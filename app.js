@@ -19,7 +19,7 @@ uxDesignerLink.addEventListener('mouseenter', () => {
     aboutParagraph.style.opacity = 0.2;
     uxDesignerLink.style.cursor = 'default';
     uxDesignerImages.style.zIndex = 12;
-    let delay = 100;
+    let delay = 50;
 
     for (const child of uxDesignerImages.children) {
         setTimeout(() => {
@@ -55,7 +55,7 @@ creativeDeveloperLink.addEventListener('mouseenter', () => {
     aboutParagraph.style.opacity = 0.2;
     creativeDeveloperLink.style.cursor = 'default';
     creativeDeveloperImages.style.zIndex = 12;
-    let delay = 100;
+    let delay = 50;
     for (const child of creativeDeveloperImages.children) {
         setTimeout(() => {
         child.style.visibility = 'visible';
@@ -92,7 +92,7 @@ arEnthusiastLink.addEventListener('mouseenter', () => {
     aboutParagraph.style.opacity = 0.2;
     arEnthusiastLink.style.cursor = 'default';
     arEnthusiastImages.style.zIndex = 12;
-    let delay = 100;
+    let delay = 50;
     for (const child of arEnthusiastImages.children) {
         setTimeout(() => {
             child.style.visibility = 'visible';
