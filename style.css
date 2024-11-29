@@ -183,6 +183,7 @@ header {
     position: absolute;
     top: 5vw;
     left: 30vw;
+    filter: drop-shadow(rgba(0,0,0,0) -4px 4px 12px);
 }
 
 #ux-design-4 {
@@ -240,8 +241,9 @@ header {
 
 #ar-enthusiast-2 {
     position: absolute;
-    top: -26vw;
-    left: 0vw;
+    top: -18vw;
+    left: -2vw;
+    filter: drop-shadow(rgba(0,0,0,0) -4px 4px 12px);
 }
 
 #ar-enthusiast-3 {
