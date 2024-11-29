@@ -133,11 +133,12 @@ header {
 }
 
 .header-img {
-    width: calc(3rem + 3vw);
+    width: calc(3.5rem + 3.5vw);
     border-radius: 8px;
     opacity: 0;
     transition: opacity 300ms ease-out;
     visibility: hidden;
+    filter: drop-shadow(rgba(0,0,0,0.6) -4px 4px 12px);
 }
 
 .tall {
@@ -155,6 +156,7 @@ header {
 
 .wide {
     min-width: calc(12rem + 12vw);
+    filter: drop-shadow(rgba(0,0,0,0.1) -4px 4px 12px);
 }
 
 #ux-designer-images {
@@ -162,61 +164,64 @@ header {
     top: 0;
     left: 0;
     height: 10px;
+    width: 100%;
 }
 
 #ux-design-1 {
-    position: relative;
-    top: -4vw;
-    left: -4vw;
+    position: absolute;
+    top: -3vw;
+    left: -5vw;
 }
 
 #ux-design-2 {
-    position: relative;
-    top: -7vw;
-    left: 34vw;
-}
-
-#ux-design-3 {
-    position: relative;
-    top: -18vw;
+    position: absolute;
+    top: -1vw;
     left: 27vw;
 }
 
-#ux-design-4 {
-    position: relative;
-    top: 0vw;
-    left: 40vw;
+#ux-design-3 {
+    position: absolute;
+    top: 5vw;
+    left: 30vw;
 }
+
+#ux-design-4 {
+    position: absolute;
+    top: -14vw;
+    left: 38vw;
+}
+
 
 #creative-developer-images {
     position: relative;
     top: 0;
     left: 0;
     height: 10px;
+    width: 100%;
 }
 
 #creative-dev-1 {
-    position: relative;
-    top: -7vw;
-    left: -8vw;
+    position: absolute;
+    top: -3vw;
+    left: -10vw;
 }
 
 #creative-dev-2 {
-    position: relative;
-    top: -4vw;
-    left: 7vw;
+    position: absolute;
+    top: 4vw;
+    left: 1vw;
 }
 
 #creative-dev-3 {
-    position: relative;
-    top: -22vw;
-    left: 25vw;
+    position: absolute;
+    top: 4vw;
+    left: 26vw;
 }
 
 #creative-dev-4 {
-    position: relative;
+    position: absolute;
     top: -24vw;
-    left: 12vw;
+    left: 28vw;
 }
 
 
@@ -228,26 +233,26 @@ header {
 }
 
 #ar-enthusiast-1 {
-    position: relative;
+    position: absolute;
     top: -10vw;
     left: -14vw;
 }
 
 #ar-enthusiast-2 {
-    position: relative;
+    position: absolute;
     top: -26vw;
     left: 0vw;
 }
 
 #ar-enthusiast-3 {
-    position: relative;
+    position: absolute;
     top: -21vw;
     left: 11vw;
 }
 
 #ar-enthusiast-4 {
-    position: relative;
-    top: -24vw;
+    position: absolute;
+    top: 0vw;
     left: 16vw;
 }
 
@@ -446,6 +451,22 @@ nav a:hover {
     #header-4 {
         margin: 0 0 32px 40vw;
     }
+
+    #ux-design-1 {
+        left: -1vw;
+    }
+
+    #ux-design-4 {
+        left: 50vw;
+    }
+
+    #creative-dev-1 {
+        left: -12vw;
+    }
+
+    #creative-dev-4 {
+        top: -28vw;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -497,6 +518,41 @@ nav a:hover {
 
     .about-img {
         width: 100%;
+    }
+
+    .header-img {
+        width: calc(3rem + 3vw);
+    }
+
+    .large {
+        min-width: calc(5rem + 5vw);
+    }
+    
+    .wide {
+        min-width: calc(10rem + 10vw);
+    }
+
+    #ux-design-2 {
+        top: 0;
+        left: 34vw;
+    }
+    
+    #ux-design-3 {
+        top: 8vw;
+        left: 40vw;
+    }
+
+    #ux-design-4 {
+        left: 54vw;
+        top: -18vw;
+    }
+
+    #creative-dev-1 {
+        left: -14vw;
+    }
+
+    #creative-dev-4 {
+        top: -32vw;
     }
 }
 
