@@ -246,11 +246,11 @@ header {
     filter: drop-shadow(rgba(0,0,0,0) -4px 4px 12px);
 }
 
-#ar-enthusiast-3 {
+/* #ar-enthusiast-3 {
     position: absolute;
     top: -21vw;
     left: 11vw;
-}
+} */
 
 #ar-enthusiast-4 {
     position: absolute;
@@ -469,6 +469,21 @@ nav a:hover {
     #creative-dev-4 {
         top: -28vw;
     }
+
+    #ar-enthusiast-1 {
+        top: -4vw;
+        left: -8vw;
+    }
+
+    #ar-enthusiast-2 {
+        top: -22vw;
+        left: -2vw;
+    }
+
+    #ar-enthusiast-4 {
+        top: 4vw;
+        left: 20vw;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -555,6 +570,21 @@ nav a:hover {
 
     #creative-dev-4 {
         top: -32vw;
+    }
+
+    #ar-enthusiast-1 {
+        top: -4vw;
+        left: -8vw;
+    }
+
+    #ar-enthusiast-2 {
+        top: -25vw;
+        left: -2vw;
+    }
+
+    #ar-enthusiast-4 {
+        top: 4vw;
+        left: 18vw;
     }
 }
 

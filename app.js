@@ -8,11 +8,9 @@ const arEnthusiastLink = document.getElementById("ar-enthusiast-link");
 const arEnthusiastImages = document.getElementById("ar-enthusiast-images");
 const aboutParagraph = document.getElementById("about-paragraph");
 
-// uxDesignerImages.style.display = 'none';
-// creativeDeveloperImages.style.display = 'none';
-// arEnthusiastImages.style.display = 'none';
-
 uxDesignerLink.addEventListener('mouseenter', () => {
+    if (window.innerWidth > 600) {
+
     uxDesignerImages.style.display = 'block';
     creativeDeveloperLink.style.opacity = 0.2;
     arEnthusiastLink.style.opacity = 0.2;
@@ -29,94 +27,113 @@ uxDesignerLink.addEventListener('mouseenter', () => {
             delay += 100;
         }
 
+    }
+
 });
 
 uxDesignerLink.addEventListener('mouseout', () => {
-    creativeDeveloperLink.style.opacity = 1;
-    arEnthusiastLink.style.opacity = 1;
-    aboutParagraph.style.opacity = 1;
-    uxDesignerImages.style.zIndex = 1;
-    let delay = 100;
-    for (const child of uxDesignerImages.children) {
-        setTimeout(() => {
-            child.style.opacity = 0;
+    if (window.innerWidth > 600) {
+
+        creativeDeveloperLink.style.opacity = 1;
+        arEnthusiastLink.style.opacity = 1;
+        aboutParagraph.style.opacity = 1;
+        uxDesignerImages.style.zIndex = 1;
+        let delay = 100;
+        for (const child of uxDesignerImages.children) {
             setTimeout(() => {
-                child.style.visibility = 'hidden';
-            }, 300);
-        }, delay);
-        delay += 100;
-    };
+                child.style.opacity = 0;
+                setTimeout(() => {
+                    child.style.visibility = 'hidden';
+                }, 300);
+            }, delay);
+            delay += 100;
+        };
+
+    }
 });
 
 
 creativeDeveloperLink.addEventListener('mouseenter', () => {
-    uxDesignerLink.style.opacity = 0.2;
-    arEnthusiastLink.style.opacity = 0.2;
-    aboutParagraph.style.opacity = 0.2;
-    creativeDeveloperLink.style.cursor = 'default';
-    creativeDeveloperImages.style.zIndex = 12;
-    let delay = 50;
-    for (const child of creativeDeveloperImages.children) {
-        setTimeout(() => {
-        child.style.visibility = 'visible';
-        child.style.opacity = 1;
-        }, delay);
-        delay += 100;
-    }
-});
+    if (window.innerWidth > 600) {
 
-creativeDeveloperLink.addEventListener('mouseout', () => {
-    uxDesignerLink.style.opacity = 1;
-    arEnthusiastLink.style.opacity = 1;
-    aboutParagraph.style.opacity = 1;
-    creativeDeveloperImages.style.zIndex = 1;
-    let delay = 100;
-    for (const child of creativeDeveloperImages.children) {
-        setTimeout(() => {
-            child.style.opacity = 0;
+        uxDesignerLink.style.opacity = 0.2;
+        arEnthusiastLink.style.opacity = 0.2;
+        aboutParagraph.style.opacity = 0.2;
+        creativeDeveloperLink.style.cursor = 'default';
+        creativeDeveloperImages.style.zIndex = 12;
+        let delay = 50;
+        for (const child of creativeDeveloperImages.children) {
             setTimeout(() => {
-                child.style.visibility = 'hidden';
-            }, 300);
-        }, delay);
-        delay += 100;
-    };
-    // setTimeout(() => {
-    //     creativeDeveloperImages.style.display = 'none';
-    // }, 700);
-});
-
-arEnthusiastLink.addEventListener('mouseenter', () => {
-    arEnthusiastImages.style.display = 'block';
-    uxDesignerLink.style.opacity = 0.2;
-    creativeDeveloperLink.style.opacity = 0.2;
-    aboutParagraph.style.opacity = 0.2;
-    arEnthusiastLink.style.cursor = 'default';
-    arEnthusiastImages.style.zIndex = 12;
-    let delay = 50;
-    for (const child of arEnthusiastImages.children) {
-        setTimeout(() => {
             child.style.visibility = 'visible';
             child.style.opacity = 1;
             }, delay);
             delay += 100;
         }
+
+    }
+});
+
+creativeDeveloperLink.addEventListener('mouseout', () => {
+    if (window.innerWidth > 600) {
+
+        uxDesignerLink.style.opacity = 1;
+        arEnthusiastLink.style.opacity = 1;
+        aboutParagraph.style.opacity = 1;
+        creativeDeveloperImages.style.zIndex = 1;
+        let delay = 100;
+        for (const child of creativeDeveloperImages.children) {
+            setTimeout(() => {
+                child.style.opacity = 0;
+                setTimeout(() => {
+                    child.style.visibility = 'hidden';
+                }, 300);
+            }, delay);
+            delay += 100;
+        };
+
+    }
+});
+
+arEnthusiastLink.addEventListener('mouseenter', () => {
+    if (window.innerWidth > 600) {
+
+        arEnthusiastImages.style.display = 'block';
+        uxDesignerLink.style.opacity = 0.2;
+        creativeDeveloperLink.style.opacity = 0.2;
+        aboutParagraph.style.opacity = 0.2;
+        arEnthusiastLink.style.cursor = 'default';
+        arEnthusiastImages.style.zIndex = 12;
+        let delay = 50;
+        for (const child of arEnthusiastImages.children) {
+            setTimeout(() => {
+                child.style.visibility = 'visible';
+                child.style.opacity = 1;
+                }, delay);
+                delay += 100;
+        }
+
+    }
 });
 
 arEnthusiastLink.addEventListener('mouseout', () => {
-    uxDesignerLink.style.opacity = 1;
-    creativeDeveloperLink.style.opacity = 1;
-    aboutParagraph.style.opacity = 1;
-    arEnthusiastImages.style.zIndex = 1;
-    let delay = 100;
-    for (const child of arEnthusiastImages.children) {
-        setTimeout(() => {
-            child.style.opacity = 0;
+    if (window.innerWidth > 600) { 
+    
+        uxDesignerLink.style.opacity = 1;
+        creativeDeveloperLink.style.opacity = 1;
+        aboutParagraph.style.opacity = 1;
+        arEnthusiastImages.style.zIndex = 1;
+        let delay = 100;
+        for (const child of arEnthusiastImages.children) {
             setTimeout(() => {
-                child.style.visibility = 'hidden';
-            }, 300);
-        }, delay);
-        delay += 100;
-    };
+                child.style.opacity = 0;
+                setTimeout(() => {
+                    child.style.visibility = 'hidden';
+                }, 300);
+            }, delay);
+            delay += 100;
+        };
+        
+    }
 });
 
 
