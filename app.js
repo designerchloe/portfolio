@@ -13,7 +13,7 @@ const aboutParagraph = document.getElementById("about-paragraph");
 uxDesignerLink.addEventListener('mouseenter', () => {
     if (window.innerWidth > 600) {
 
-    uxDesignerImages.style.display = 'block';
+    // uxDesignerImages.style.display = 'block';
     creativeDeveloperLink.style.opacity = 0.2;
     arEnthusiastLink.style.opacity = 0.2;
     aboutParagraph.style.opacity = 0.2;
@@ -58,6 +58,7 @@ uxDesignerLink.addEventListener('mouseout', () => {
 creativeDeveloperLink.addEventListener('mouseenter', () => {
     if (window.innerWidth > 600) {
 
+        // creativeDeveloperImages.style.display = 'block';
         uxDesignerLink.style.opacity = 0.2;
         arEnthusiastLink.style.opacity = 0.2;
         aboutParagraph.style.opacity = 0.2;
@@ -99,7 +100,7 @@ creativeDeveloperLink.addEventListener('mouseout', () => {
 arEnthusiastLink.addEventListener('mouseenter', () => {
     if (window.innerWidth > 600) {
 
-        arEnthusiastImages.style.display = 'block';
+        // arEnthusiastImages.style.display = 'block';
         uxDesignerLink.style.opacity = 0.2;
         creativeDeveloperLink.style.opacity = 0.2;
         aboutParagraph.style.opacity = 0.2;
