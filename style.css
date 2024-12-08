@@ -590,6 +590,10 @@ nav a:hover {
 
 @media only screen and (max-width: 600px) {
 
+    #title {
+        align-items: flex-start;
+    }
+
     header {
         padding: 20px;
         height: 80vh;
@@ -597,28 +601,28 @@ nav a:hover {
     }
 
     h1 {
-        font-size: calc(1.5rem + 3vw);
+        font-size: calc(1rem + 6vw);
     }
 
     p {
-        font-size: clamp(14px, calc(0.6rem + 0.5vw), calc(0.6rem + 0.5vw));
+        font-size: calc(1rem + 0.5vw);
     }
 
     #header-1 {
-        margin: 0 0 0 -40vw;
+        margin: 0;
     }
 
     #header-2 {
-        margin: 0 0 0 12vw;
+        margin: 0;
     }
 
     #header-3 {
-        margin: 6vh 0 0 -12vw;
+        margin: 0;
     }
 
     #header-4 {
-        margin: 0 0 12px 32vw;
-        width: 60vw;
+        margin: 0;
+        width: 100%;
     }
 
     main {
@@ -639,33 +643,7 @@ nav a:hover {
     }
 
     p {
-        font-size: clamp(12px, calc(0.6rem + 0.5vw), calc(0.6rem + 0.5vw));
-    }
-
-    #title {
-        align-items: flex-start;
-    }
-
-    #header-1 {
-        margin: 0;
-        white-space: wrap;
-    }
-
-    #header-2 {
-        margin: 0;
-        text-align: right;
-        width: 100%;
-        white-space: wrap;
-    }
-
-    #header-3 {
-        margin: 4vh 0 0 0;
-        white-space: wrap;
-    }
-
-    #header-4 {
-        margin: 0 0 32px 20vw;
-        width: 70vw;
+        font-size: clamp(12px, calc(0.8rem + 0.5vw), calc(0.8rem + 0.5vw));
     }
 
     main {
@@ -685,21 +663,8 @@ nav a:hover {
         font-size: calc(0.5rem + 5vw);
     }
 
-    #header-2 {
-        margin: 0;
-        text-align: left;
-        width: 100%;
-        white-space: nowrap;
-    }
-
-    #header-3 {
-        margin: 2vh 0 0 0;
-        white-space: wrap;
-    }
-
-    #header-4 {
-        margin: 0 0 32px 0;
-        width: 80vw;
+    p {
+        font-size: 12px;
     }
 
     nav a{
