@@ -86,7 +86,7 @@ span {
 
 header {
     padding: 40px;
-    height: 90vh;
+    height: 95vh;
     min-height: 800px;
     background: linear-gradient(180deg, #232323 0%, #323232 100%);
 }
@@ -605,7 +605,7 @@ nav a:hover {
     header {
         padding: 20px;
         height: 90vh;
-        min-height: 600px;
+        min-height: 800px;
     }
 
     h1 {
@@ -658,6 +658,7 @@ nav a:hover {
         width: 100%;
         display: flex;
         padding: 12px 0;
+        height: auto;
     }
 
     .mobile-sub-container {
@@ -666,6 +667,10 @@ nav a:hover {
 
     .mobile-image-container#top {
         justify-content: flex-end;
+    }
+
+    .mobile-image-container#bottom {
+        height: 240px;
     }
 
     .mobile-image-container .header-img {
@@ -708,7 +713,7 @@ nav a:hover {
     header {
         padding: 20px;
         height: 80vh;
-        min-height: 500px;
+        min-height: 700px;
     }
 
     h1 {
@@ -738,7 +743,7 @@ nav a:hover {
     header {
         padding: 20px;
         height: 70vh;
-        min-height: 400px;
+        min-height: 700px;
     }
 
     h1 {
