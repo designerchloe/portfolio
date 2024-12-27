@@ -88,7 +88,12 @@
                         <span class="tag">Healthcare</span>
                     </div>
                 </div>
-                <img class="project-img" src="Assets/fitconnect-cover.png">
+                <!-- <img class="project-img" src="Assets/Fitconnect-newcover.png"> -->
+                <picture class="project-img">
+                    <source srcset="Assets/Fitconnect-mobilecover.png" media="(max-width: 600px)" width="100%">
+                    <source srcset="Assets/Fitconnect-newcover.png" media="(min-width: 601px)" width="100%">
+                    <img src="Assets/Fitconnect-newcover.png" alt="Example image" width="100%">
+                  </picture>
             </div>
             </a>
 
@@ -105,11 +110,12 @@
                     </div>
                 </div>
                 <img class="about-img" src="Assets/about.gif">
+                
             </div>
 
         </section>
 
-        <div id="cursor" class="fade">Read Case Study</div>
+        <!-- <div id="cursor" class="fade">Read Case Study</div> -->
 
     </main>
 

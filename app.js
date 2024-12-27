@@ -195,36 +195,56 @@ if (elementsToFadeIn) {
   });
 }
 
+//work hover states 
+
+// const projectContainers = document.querySelectorAll(".project");
+
+// projectContainers.forEach(project => {
+//     project.addEventListener("mouseover", (event) => {
+//         let image = event.currentTarget.querySelector('img');
+//         image.style.transform = 'scale(1.02)';
+//         image.style.transition = 'transform 0.3s ease';
+//     });
+
+//     project.addEventListener('mouseout', event => {
+//         const image = event.currentTarget.querySelector('img');
+//         if (image) {
+//           image.style.transform = 'scale(1)';
+//         }
+//       });
+// });
+
+
 //cursor
 
-let mouseCursor = document.querySelector('#cursor');
-mouseCursor.style.display = 'none';
+// let mouseCursor = document.querySelector('#cursor');
+// mouseCursor.style.display = 'none';
 
-function cursor(e) {
-    mouseCursor.style.display = '';
-    mouseCursor.classList.remove('fade-out');
-    mouseCursor.classList.add('fade');
-    mouseCursor.style.opacity = '1';
-    mouseCursor.style.top = e.pageY + 'px';
-    mouseCursor.style.left = e.pageX + 'px';
-};
+// function cursor(e) {
+//     mouseCursor.style.display = '';
+//     mouseCursor.classList.remove('fade-out');
+//     mouseCursor.classList.add('fade');
+//     mouseCursor.style.opacity = '1';
+//     mouseCursor.style.top = e.pageY + 'px';
+//     mouseCursor.style.left = e.pageX + 'px';
+// };
 
-function disappear() {
-    mouseCursor.style.display = '';
-    mouseCursor.classList.remove('fade');
-    mouseCursor.classList.add('fade-out');
-    mouseCursor.style.opacity = "0";
-}
+// function disappear() {
+//     mouseCursor.style.display = '';
+//     mouseCursor.classList.remove('fade');
+//     mouseCursor.classList.add('fade-out');
+//     mouseCursor.style.opacity = "0";
+// }
 
 // window.addEventListener('mousemove', cursor);
 
-elementsToFadeIn.forEach(function(element) {
-    element.addEventListener('mousemove', cursor);
-});
+// elementsToFadeIn.forEach(function(element) {
+//     element.addEventListener('mousemove', cursor);
+// });
 
-elementsToFadeIn.forEach(function(element) {
-    element.addEventListener('mouseout', disappear);
-});
+// elementsToFadeIn.forEach(function(element) {
+//     element.addEventListener('mouseout', disappear);
+// });
 
 
 //masonry grid
@@ -317,22 +337,22 @@ generateGrid(3, posts);
 
 //copy email
 
-const email = document.querySelector('#email').innerHTML;
-const emailLink = document.querySelector('#email-link');
+// const email = document.querySelector('#email').innerHTML;
+// const emailLink = document.querySelector('#email-link');
 
-function copyEmail() {
-  navigator.clipboard.writeText(email);
-  console.log('copied to clipboard');
-}
+// function copyEmail() {
+//   navigator.clipboard.writeText(email);
+//   console.log('copied to clipboard');
+// }
 
-emailLink.addEventListener('click', copyEmail);
-let icon = document.querySelector('.icon-sm');
+// emailLink.addEventListener('click', copyEmail);
+// let icon = document.querySelector('.icon-sm');
 
-emailLink.addEventListener('mouseover', () => {
-    icon.style.opacity = 1;
-})
+// emailLink.addEventListener('mouseover', () => {
+//     icon.style.opacity = 1;
+// })
 
-emailLink.addEventListener('mouseout', () => {
-    icon.style.opacity = 0;
-})
+// emailLink.addEventListener('mouseout', () => {
+//     icon.style.opacity = 0;
+// })
 
