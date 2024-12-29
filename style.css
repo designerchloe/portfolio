@@ -32,6 +32,7 @@ p {
 
 span {
     font-size: clamp(14px, calc(0.5rem + 0.5vw), calc(0.5rem + 0.5vw));
+    text-wrap: nowrap;
 }
 
 .tag {
@@ -736,7 +737,8 @@ footer {
     }
 
     p {
-        font-size: calc(1rem + 0.5vw);
+        font-size: clamp(14px, calc(1rem + 0.5vw), calc(1rem + 0.5vw));
+        
     }
 
     #header-1 {
@@ -839,6 +841,20 @@ footer {
     .archive .square {
         aspect-ratio: 4 / 5;
     }
+
+    .archive-container {
+        left: -20px;
+    }
+
+    .archive {
+        padding: 0 20px;
+        gap: 20px;
+    }
+
+    .archive-img {
+        height: 88vw;
+        min-height: 320px;
+    }
     
 
 }
@@ -856,7 +872,7 @@ footer {
     }
 
     p {
-        font-size: clamp(12px, calc(0.8rem + 0.5vw), calc(0.8rem + 0.5vw));
+        font-size: clamp(14px, calc(0.8rem + 0.5vw), calc(0.8rem + 0.5vw));
     }
 
     main {
@@ -883,10 +899,6 @@ footer {
 
     h1 {
         font-size: calc(0.5rem + 6.5vw);
-    }
-
-    p {
-        font-size: 12px;
     }
 
     nav a{
