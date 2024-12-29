@@ -195,6 +195,8 @@ if (elementsToFadeIn) {
   });
 }
 
+
+
 //work hover states 
 
 // const projectContainers = document.querySelectorAll(".project");

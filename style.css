@@ -401,24 +401,23 @@ nav a:hover {
 }
 
 .archive-img {
-    height: 400px;
+    height: 31vw;
     border-radius: 8px;
-    /* overflow: hidden; */
+    overflow: hidden;
+    max-height: 500px;
+    min-height: 300px;
 }
 
 .archive .wide {
     aspect-ratio: 16 / 9;
-    /* max-width: 60%; */
 }
 
 .archive .square {
     aspect-ratio: 1 / 1;
-    /* max-width: 30%; */
 }
 
 .archive .tall {
     aspect-ratio: 4 / 5;
-    /* max-width: 20%; */
 }
 
 /* play section */
@@ -547,6 +546,14 @@ footer {
 
     #header-4 {
         padding-top: 28px;
+    }
+
+    .archive-container {
+        left: -150px;
+    }
+
+    .archive {
+        padding: 0 150px;
     }
 }
 
@@ -824,6 +831,15 @@ footer {
     footer {
         padding: 20px;
     }
+
+    .archive .wide {
+        aspect-ratio: 4 / 5;
+    }
+    
+    .archive .square {
+        aspect-ratio: 4 / 5;
+    }
+    
 
 }
 
