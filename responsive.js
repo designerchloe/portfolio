@@ -18,12 +18,16 @@ function getVideoSource(sources, width) {
       
   
       if (video.src !== newSource) {
+        console.log(newSource);
+        console.log(video.src);
         video.src = newSource; // Update the video src directly
+        console.log(video.src);
         video.load(); // Reload video to apply the new source
         video.play().catch(() => console.log('Autoplay may be blocked.'));
       }
     });
   };
+  
   // // Initial check
   // updateAllVideoSources();
   
