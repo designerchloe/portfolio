@@ -20,6 +20,7 @@ function getVideoSource(sources, width) {
       if (video.src !== newSource) {
         video.src = newSource; // Update the video src directly
         video.load(); // Reload video to apply the new source
+        video.play();
       }
     });
   }
