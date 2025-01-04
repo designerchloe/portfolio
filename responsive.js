@@ -23,8 +23,7 @@ function getVideoSource(sources, width) {
         video.play().catch(() => console.log('Autoplay may be blocked.'));
       }
     });
-  }
-  
+  };
   // // Initial check
   // updateAllVideoSources();
   
