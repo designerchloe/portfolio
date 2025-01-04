@@ -34,3 +34,23 @@ function getVideoSource(sources, width) {
     clearTimeout(resizeTimeout);
     resizeTimeout = setTimeout(updateAllVideoSources, 300);
   });
+
+  // Intersection Observer to handle video play/pause on viewport visibility
+function handleVideoPlayback(entries) {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+          entry.target.play().catch(error => console.log('Autoplay blocked:', error));
+      } else {
+          entry.target.pause();
+      }
+  });
+}
+
+// Initialize the observer
+const observer = new IntersectionObserver(handleVideoPlayback, {
+  threshold: 0.5 // 50% of the video must be visible to trigger playback
+});
+
+// Attach observer to all videos
+const videos = document.querySelectorAll('.responsive-video');
+videos.forEach(video => observer.observe(video));
