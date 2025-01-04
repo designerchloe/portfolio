@@ -92,26 +92,26 @@ window.addEventListener('scroll', handler);
   
 //cursor
 
-let promo = document.querySelector('.promo-area');
-let mouseCursor = document.querySelector('#cursor');
-mouseCursor.style.display = 'none';
+// let promo = document.querySelector('.promo-area');
+// let mouseCursor = document.querySelector('#cursor');
+// mouseCursor.style.display = 'none';
 
-function cursor(e) {
-    mouseCursor.style.display = '';
-    mouseCursor.classList.remove('fade-out');
-    mouseCursor.classList.add('fade');
-    mouseCursor.style.opacity = '1';
-    mouseCursor.style.top = e.pageY + 'px';
-    mouseCursor.style.left = e.pageX + 'px';
-};
+// function cursor(e) {
+//     mouseCursor.style.display = '';
+//     mouseCursor.classList.remove('fade-out');
+//     mouseCursor.classList.add('fade');
+//     mouseCursor.style.opacity = '1';
+//     mouseCursor.style.top = e.pageY + 'px';
+//     mouseCursor.style.left = e.pageX + 'px';
+// };
 
-function disappear() {
-    mouseCursor.style.display = '';
-    mouseCursor.classList.remove('fade');
-    mouseCursor.classList.add('fade-out');
-    mouseCursor.style.opacity = "0";
-}
+// function disappear() {
+//     mouseCursor.style.display = '';
+//     mouseCursor.classList.remove('fade');
+//     mouseCursor.classList.add('fade-out');
+//     mouseCursor.style.opacity = "0";
+// }
 
-promo.addEventListener('mousemove', cursor);
+// promo.addEventListener('mousemove', cursor);
 
-promo.addEventListener('mouseout', disappear);
+// promo.addEventListener('mouseout', disappear);
