@@ -159,6 +159,11 @@ section img {
     border-radius: 8px;
 }
 
+section picture {
+    width: 100%;
+    border-radius: 8px;
+}
+
 section video {
     width: 100%;
     border-radius: 8px;

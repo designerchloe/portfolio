@@ -10,6 +10,7 @@
     <link href="Assets/Light Mode.svg" rel="icon" media="(prefers-color-scheme: light)">
     <link href="Assets/Dark Mode.svg" rel="icon" media="(prefers-color-scheme: dark)">
     <script src="case-study.js" defer></script>
+    <script src="responsive.js" defer></script>
     <title>FitConnect Case Study</title>
 </head>
 <body>
@@ -36,7 +37,12 @@
             <div id="section-container">
             <section id="section-1">
                 <div id="intro">
-                    <img src="Assets/fitconnect/Desktop/D-banner.png">
+                    <picture>
+                        <source srcset="Assets/fitconnect/Mobile/M-banner.png" media="(max-width: 600px)" width="100%">
+                        <source srcset="Assets/fitconnect/Desktop/D-banner.png" media="(min-width: 601px)" width="100%">
+                        <img src="Assets/fitconnect/Desktop/D-banner.png" alt="Example image" width="100%">
+                    </picture>
+                    <!-- <img src="Assets/fitconnect/Desktop/D-banner.png"> -->
                     <div class="text">
                         <span>2022</span>
                         <h2>Making contact-lens ordering more visionary</h2>
@@ -64,7 +70,12 @@
                         <h3>Context</h3>
                         <p>BostonSight is a scleral lens manufacturing company that many eye doctors go to for patients with visual abnormalities. The custom nature of scleral lenses lends itself to a more comfortable fit, however it results in a more complex process to configure the correct size, shape, and material. To make the process easier for practitioners, BostonSight set out to create FitConnect—an app for designing lenses, placing orders, and keeping track of patients.</p>
                     </div>
-                    <img src="Assets/fitconnect/Desktop/D-context.png">
+                    <picture>
+                        <source srcset="Assets/fitconnect/Mobile/M-context.png" media="(max-width: 600px)" width="100%">
+                        <source srcset="Assets/fitconnect/Desktop/D-context.png" media="(min-width: 601px)" width="100%">
+                        <img src="Assets/fitconnect/Desktop/D-context.png" alt="Example image" width="100%">
+                    </picture>
+                    <!-- <img src="Assets/fitconnect/Desktop/D-context.png"> -->
                 </div>
                 
                 <div id="problem" class="group">
@@ -72,7 +83,12 @@
                         <h3>Problem</h3>
                         <p>When it came to placing a new order for a patient, practitioners relied heavily on the application’s training videos and instruction—which took precious extra time in a doctor’s already crazy schedule. They needed it to be quicker and easier.</p>
                     </div>
-                    <img src="Assets/fitconnect/Desktop/D-problem.png">
+                    <picture>
+                        <source srcset="Assets/fitconnect/Mobile/M-problem.png" media="(max-width: 600px)" width="100%">
+                        <source srcset="Assets/fitconnect/Desktop/D-problem.png" media="(min-width: 601px)" width="100%">
+                        <img src="Assets/fitconnect/Desktop/D-problem.png" alt="Example image" width="100%">
+                    </picture>
+                    <!-- <img src="Assets/fitconnect/Desktop/D-problem.png"> -->
                 </div>
 
                 <div id="process" class="group">
@@ -80,20 +96,40 @@
                         <h3>Process</h3>
                         <p>To solve this problem, I started by looking to other online flows that allowed users to “build” a fairly complicated custom product—like building your custom car, or designing your very own custom Converse. This concept, while a bit more complex than a simple “add to cart” style flow, is fairly commonly used and vetted across hundreds of companies and their users—so we decided to try it out for a new patient order flow.</p>
                     </div>
-                    <img src="Assets/fitconnect/Desktop/D-process-1.png">
-                    <img src="Assets/fitconnect/Desktop/D-process-2.png">
+                    <picture>
+                        <source srcset="Assets/fitconnect/Mobile/M-process-1.png" media="(max-width: 600px)" width="100%">
+                        <source srcset="Assets/fitconnect/Desktop/D-process-1.png" media="(min-width: 601px)" width="100%">
+                        <img src="Assets/fitconnect/Desktop/D-process-1.png" alt="Example image" width="100%">
+                    </picture>
+                    <!-- <img src="Assets/fitconnect/Desktop/D-process-1.png"> -->
+                    <picture>
+                        <source srcset="Assets/fitconnect/Mobile/M-process-2.png" media="(max-width: 600px)" width="100%">
+                        <source srcset="Assets/fitconnect/Desktop/D-process-2.png" media="(min-width: 601px)" width="100%">
+                        <img src="Assets/fitconnect/Desktop/D-process-2.png" alt="Example image" width="100%">
+                    </picture>
+                    <!-- <img src="Assets/fitconnect/Desktop/D-process-2.png"> -->
                     <div class="group">
                         <div class="text">
                             <p>This concept immediately resonated with stakeholders, supervisors, and researchers so I got to work converting them to a higher fidelity. The iterative process did glean a few new details and revisions to solve for as we went. For example, one aspect that stakeholders called out was the way in which doctors choose the correct product. Our initial solution was to keep products simply laid out in cards—but it turned out that there were many dependencies across fit and type that would require a specific order of selection.</p>
                         </div>
-                        <img src="Assets/fitconnect/Desktop/D-process-3.png">
+                        <picture>
+                            <source srcset="Assets/fitconnect/Mobile/M-process-3.png" media="(max-width: 600px)" width="100%">
+                            <source srcset="Assets/fitconnect/Desktop/D-process-3.png" media="(min-width: 601px)" width="100%">
+                            <img src="Assets/fitconnect/Desktop/D-process-3.png" alt="Example image" width="100%">
+                        </picture>
+                        <!-- <img src="Assets/fitconnect/Desktop/D-process-3.png"> -->
                     </div>
     
                     <div class="group">
                         <div class="text">
                             <p>With the design of the dashboard and ordering flow largely finished, it was easy to start building a design system of components and styles. This would not only help us finish designing additional pages in a consistent way, but it served as a cohesive set of guidelines for the design and development of FitConnect as a whole.<br><br>Using these guidelines we were able to iterate on designs for key pages like the main dashboard, the patient account page, order history, login, and billing.</p>
                         </div>
-                        <img src="Assets/fitconnect/Desktop/D-process-4.png">
+                        <picture>
+                            <source srcset="Assets/fitconnect/Mobile/M-process-4.png" media="(max-width: 600px)" width="100%">
+                            <source srcset="Assets/fitconnect/Desktop/D-process-4.png" media="(min-width: 601px)" width="100%">
+                            <img src="Assets/fitconnect/Desktop/D-process-4.png" alt="Example image" width="100%">
+                        </picture>
+                        <!-- <img src="Assets/fitconnect/Desktop/D-process-4.png"> -->
                     </div>
                 </div>
                 
@@ -102,11 +138,27 @@
                         <h3>Solution</h3>
                         <p>After many rounds of feedback, we landed on a more modern dashboard and wizard-like ordering experience, with much cleaner pages for orders and patients.</p>
                     </div>
-                    <video src="Assets/fitconnect/Desktop/D-solution-1.mp4" type="video/mp4" autoplay loop muted>
+                    <!-- <video src="Assets/fitconnect/Desktop/D-solution-1.mp4" type="video/mp4" autoplay loop muted>
+                        Sorry, your browser doesn't support embedded videos!
+                    </video> -->
+                    <video class="responsive-video" src="Assets/fitconnect/Desktop/D-solution-1.mp4" autoplay loop muted data-sources='{
+                        "desktop": "Assets/fitconnect/Desktop/D-solution-1.mp4",
+                        "mobile": "Assets/fitconnect/Mobile/M-solution-1.mp4"
+                      }'>
                         Sorry, your browser doesn't support embedded videos!
                     </video>
-                    <img src="Assets/fitconnect/Desktop/D-solution-2.png">
-                    <img src="Assets/fitconnect/Desktop/D-solution-3.png">
+                    <picture>
+                        <source srcset="Assets/fitconnect/Mobile/M-solution-2.png" media="(max-width: 600px)" width="100%">
+                        <source srcset="Assets/fitconnect/Desktop/D-solution-2.png" media="(min-width: 601px)" width="100%">
+                        <img src="Assets/fitconnect/Desktop/D-solution-2.png" alt="Example image" width="100%">
+                    </picture>
+                    <!-- <img src="Assets/fitconnect/Desktop/D-solution-2.png"> -->
+                    <picture>
+                        <source srcset="Assets/fitconnect/Mobile/M-solution-3.png" media="(max-width: 600px)" width="100%">
+                        <source srcset="Assets/fitconnect/Desktop/D-solution-3.png" media="(min-width: 601px)" width="100%">
+                        <img src="Assets/fitconnect/Desktop/D-solution-3.png" alt="Example image" width="100%">
+                    </picture>
+                    <!-- <img src="Assets/fitconnect/Desktop/D-solution-3.png"> -->
                 </div>
 
                 <div id="user-testing" class="group">
@@ -140,9 +192,24 @@
                         <h3>Improvements</h3>
                         <p>Practitioners called out a few areas that could be improved upon to make their experience more convenient as well as enhance clarity for new fitconnect users.</p>
                     </div>
-                    <img src="Assets/fitconnect/Desktop/D-improvements-1.png">
-                    <img src="Assets/fitconnect/Desktop/D-improvements-2.png">
-                    <img src="Assets/fitconnect/Desktop/D-improvements-3.png">
+                    <picture>
+                        <source srcset="Assets/fitconnect/Mobile/M-improvements-1.png" media="(max-width: 600px)" width="100%">
+                        <source srcset="Assets/fitconnect/Desktop/D-improvements-1.png" media="(min-width: 601px)" width="100%">
+                        <img src="Assets/fitconnect/Desktop/D-improvements-1.png" alt="Example image" width="100%">
+                    </picture>
+                    <!-- <img src="Assets/fitconnect/Desktop/D-improvements-1.png"> -->
+                    <picture>
+                        <source srcset="Assets/fitconnect/Mobile/M-improvements-2.png" media="(max-width: 600px)" width="100%">
+                        <source srcset="Assets/fitconnect/Desktop/D-improvements-2.png" media="(min-width: 601px)" width="100%">
+                        <img src="Assets/fitconnect/Desktop/D-improvements-2.png" alt="Example image" width="100%">
+                    </picture>
+                    <!-- <img src="Assets/fitconnect/Desktop/D-improvements-2.png"> -->
+                    <picture>
+                        <source srcset="Assets/fitconnect/Mobile/M-improvements-3.png" media="(max-width: 600px)" width="100%">
+                        <source srcset="Assets/fitconnect/Desktop/D-improvements-3.png" media="(min-width: 601px)" width="100%">
+                        <img src="Assets/fitconnect/Desktop/D-improvements-3.png" alt="Example image" width="100%">
+                    </picture>
+                    <!-- <img src="Assets/fitconnect/Desktop/D-improvements-3.png"> -->
                 </div>
 
                 <div id="final-designs" class="group">
@@ -150,11 +217,27 @@
                         <h3>Final Designs</h3>
                         <p>The reimagined FitConnect makes placing and tracking orders much more intuitive.</p>
                     </div>
-                    <img src="Assets/fitconnect/Desktop/D-finaldesigns-1.png">
-                    <video src="Assets/fitconnect/Desktop/D-finaldesigns-2.mp4" type="video/mp4" autoplay loop muted>
+                    <picture>
+                        <source srcset="Assets/fitconnect/Mobile/M-finaldesigns-1.png" media="(max-width: 600px)" width="100%">
+                        <source srcset="Assets/fitconnect/Desktop/D-finaldesigns-1.png" media="(min-width: 601px)" width="100%">
+                        <img src="Assets/fitconnect/Desktop/D-finaldesigns-1.png" alt="Example image" width="100%">
+                    </picture>
+                    <!-- <img src="Assets/fitconnect/Desktop/D-finaldesigns-1.png"> -->
+                    <!-- <video src="Assets/fitconnect/Desktop/D-finaldesigns-2.mp4" type="video/mp4" autoplay loop muted>
+                        Sorry, your browser doesn't support embedded videos!
+                    </video> -->
+                    <video class="responsive-video" src="Assets/fitconnect/Desktop/D-finaldesigns-2.mp4" autoplay loop muted data-sources='{
+                        "desktop": "Assets/fitconnect/Desktop/D-finaldesigns-2.mp4",
+                        "mobile": "Assets/fitconnect/Mobile/M-finaldesigns-2.mp4"
+                      }'>
                         Sorry, your browser doesn't support embedded videos!
                     </video>
-                    <img src="Assets/fitconnect/Desktop/D-finaldesigns-3.png">
+                    <picture>
+                        <source srcset="Assets/fitconnect/Mobile/M-finaldesigns-3.png" media="(max-width: 600px)" width="100%">
+                        <source srcset="Assets/fitconnect/Desktop/D-finaldesigns-3.png" media="(min-width: 601px)" width="100%">
+                        <img src="Assets/fitconnect/Desktop/D-finaldesigns-3.png" alt="Example image" width="100%">
+                    </picture>
+                    <!-- <img src="Assets/fitconnect/Desktop/D-finaldesigns-3.png"> -->
                 </div>
 
                 <div id="the-difference" class="group">
