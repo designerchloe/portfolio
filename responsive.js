@@ -1,5 +1,7 @@
 //video resizing
 
+const normalizeURL = (url) => new URL(url, window.location.origin).href;
+
 function getVideoSource(sources, width) {
     if (width > 600) {
       return sources.desktop;
@@ -17,17 +19,16 @@ function getVideoSource(sources, width) {
       const newSource = getVideoSource(sources, width);
       
   
-      if (video.src !== newSource) {
-        console.log(newSource);
-        console.log(video.src);
+      if (video.src && normalizeURL(video.currentSrc) !== normalizeURL(newSource)) {
+        console.log(normalizeURL(video.currentSrc));
+        console.log(normalizeURL(newSource));
         video.src = newSource; // Update the video src directly
-        console.log(video.src);
         video.load(); // Reload video to apply the new source
         video.play().catch(() => console.log('Autoplay may be blocked.'));
       }
     });
   };
-  
+
   // // Initial check
   // updateAllVideoSources();
   
