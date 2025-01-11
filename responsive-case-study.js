@@ -82,6 +82,8 @@ window.addEventListener('resize', () => {
   if (window.innerWidth < 900) {
     header.appendChild(svgElement);
     main.removeChild(nav);
+    nav.style.opacity = 0;
+    header.appendChild(nav);
     anchors.forEach(anchor => {
         anchor.addEventListener('click', () => {
             setTimeout(() => {
