@@ -29,15 +29,6 @@ function getVideoSource(sources, width) {
     });
   };
 
-  // // Initial check
-  // updateAllVideoSources();
-  
-  // // Add event listener for window resize with debounce
-  // let resizeTimeout;
-  // window.addEventListener('resize', () => {
-  //   clearTimeout(resizeTimeout);
-  //   resizeTimeout = setTimeout(updateAllVideoSources, 300);
-  // });
 
   let resizeTimeout;
   window.addEventListener('DOMContentLoaded', updateAllVideoSources);
@@ -45,26 +36,6 @@ function getVideoSource(sources, width) {
     clearTimeout(resizeTimeout);
     resizeTimeout = setTimeout(updateAllVideoSources, 300);
   });
-
-//   // Intersection Observer to handle video play/pause on viewport visibility
-// function handleVideoPlayback(entries) {
-//   entries.forEach(entry => {
-//       if (entry.isIntersecting) {
-//           entry.target.play().catch(error => console.log('Autoplay blocked:', error));
-//       } else {
-//           entry.target.pause();
-//       }
-//   });
-// }
-
-// // Initialize the observer
-// const observer = new IntersectionObserver(handleVideoPlayback, {
-//   threshold: 0.5 // 50% of the video must be visible to trigger playback
-// });
-
-// // Attach observer to all videos
-// const videos = document.querySelectorAll('.responsive-video');
-// videos.forEach(video => observer.observe(video));
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -77,3 +48,4 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 document.querySelectorAll('.responsive-video').forEach(video => observer.observe(video));
+

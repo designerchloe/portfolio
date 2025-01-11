@@ -77,6 +77,15 @@ header {
     height: 24px;
 }
 
+.icon {
+    transition: transform 300ms ease-out;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 main {
     padding: 0 64px 64px 64px;
     gap: 64px;
@@ -93,6 +102,7 @@ main {
     position: fixed;
     top: 104px;
     left: 0;
+    transition: opacity 200ms ease-out;
 }
 
 .anchor-nav li {
@@ -320,47 +330,6 @@ footer {
 }
 
 
-/* @keyframes fade {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-}
-
-@keyframes fadeOut {
-  from {
-      opacity: 1;
-    }
-  to {
-      opacity: 0;
-    }
-}
-
-#cursor {
-    padding: 4px 12px;
-    background-color: rgba(255, 255, 255, 0.08);
-    font-size: clamp(12px, calc(0.5rem + 0.5vw), calc(0.5rem + 0.5vw));
-    font-weight: 300;
-    width: max-content;
-    border-radius: 8px;
-    position: absolute;
-    transform: translate(12px, -28px);
-    backdrop-filter: blur(10px);
-    opacity: 0;
-    z-index: 5;
-}
-
-.fade {
-    animation: 750ms both fade;
-}
-
-.fade-out {
-    animation: 300ms both fadeOut;
-} */
-
-
 /* media queries */
 
 @media only screen and (min-width: 1700px) {
@@ -407,15 +376,13 @@ footer {
     }
 
     header {
-        background-color: #262626;
+        background: linear-gradient(rgba(38, 38, 38, 1) 18%, rgba(38, 38, 38, 0));
+        /* background-color: rgba(38, 38, 38, 0.5); */
         z-index: 5;
         width: 100%;
         filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.25));
-        padding: 28px 28px 44px 28px;
-    }
-
-    .anchor-nav {
-        display: none;
+        padding: 28px 28px 64px 28px;
+        /* backdrop-filter: blur(8px); */
     }
 
     main {
@@ -474,6 +441,20 @@ footer {
 
     .text {
         gap: 12px;
+    }
+
+    .anchor-nav {
+        background-color: #3A3A3A;
+        z-index: 100;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        padding: 12px 44px 12px 20px;
+        position: absolute;
+        border-radius: 8px;
+        top: 64px;
+        left: auto;
+        right: 12px;
     }
 
 }
@@ -538,6 +519,25 @@ footer {
     .avatar img {
         height: 16px;
         width: 16px;
+    }
+
+    header {
+        padding: 20px 20px 64px 20px;
+    }
+
+    .anchor-nav a {
+        font-size: calc(1rem + 0.5vw);
+        font-weight: 300;
+        line-height: 140%;
+        
+    }
+
+    .anchor-nav li {
+        list-style: none;
+        padding: 12px 0;
+        display: flex;
+        align-items: center;
+        gap: 4px;
     }
 }
 
