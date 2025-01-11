@@ -19,7 +19,7 @@ h1 {
 h2 {
     font-weight: 300;
     font-size: calc(1rem + 1vw);
-    line-height: 100%;
+    line-height: 110%;
 }
 
 h3 {
