@@ -393,6 +393,18 @@ nav a:hover {
     display: none;
 }
 
+.archive-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: min-content;
+}
+
+.archive-item span {
+    width: 100%;
+    text-wrap: wrap;
+}
+
 .archive {
     display: flex;
     gap: 32px;
@@ -854,6 +866,7 @@ footer {
     .archive-img {
         height: 88vw;
         min-height: 320px;
+        width: min-content;
     }
     
 
