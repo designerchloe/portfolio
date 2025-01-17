@@ -7,9 +7,9 @@ const posts = [
     },
     {
         id: 2,
-        title: 'Javascript Generative Art',
-        date: 'Sep 2024',
-        image: 'Assets/javascript-painting.png',
+        title: 'Generative Pixels',
+        date: 'Jan 2025',
+        image: 'Assets/Pixels.gif',
     },
     {
         id: 3,
