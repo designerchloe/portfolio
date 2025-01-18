@@ -9,9 +9,11 @@ const arEnthusiastImages = document.getElementById("ar-enthusiast-images");
 const aboutParagraph = document.getElementById("about-paragraph");
 
 //header hover event listeners - adding images
+let animationTimeout;
 
 uxDesignerLink.addEventListener('mouseenter', () => {
     if (window.innerWidth > 600) {
+    animationTimeout = setTimeout(() => {
 
     // uxDesignerImages.style.display = 'block';
     creativeDeveloperLink.style.opacity = 0.2;
@@ -29,12 +31,15 @@ uxDesignerLink.addEventListener('mouseenter', () => {
             delay += 100;
         }
 
-    }
+    }, 150);
+
+}
 
 });
 
 uxDesignerLink.addEventListener('mouseout', () => {
     if (window.innerWidth > 600) {
+        clearTimeout(animationTimeout);
 
         creativeDeveloperLink.style.opacity = 1;
         arEnthusiastLink.style.opacity = 1;
@@ -57,6 +62,7 @@ uxDesignerLink.addEventListener('mouseout', () => {
 
 creativeDeveloperLink.addEventListener('mouseenter', () => {
     if (window.innerWidth > 600) {
+        animationTimeout = setTimeout(() => {
 
         // creativeDeveloperImages.style.display = 'block';
         uxDesignerLink.style.opacity = 0.2;
@@ -72,12 +78,14 @@ creativeDeveloperLink.addEventListener('mouseenter', () => {
             }, delay);
             delay += 100;
         }
+    }, 150);
 
     }
 });
 
 creativeDeveloperLink.addEventListener('mouseout', () => {
     if (window.innerWidth > 600) {
+        clearTimeout(animationTimeout);
 
         uxDesignerLink.style.opacity = 1;
         arEnthusiastLink.style.opacity = 1;
@@ -100,6 +108,8 @@ creativeDeveloperLink.addEventListener('mouseout', () => {
 arEnthusiastLink.addEventListener('mouseenter', () => {
     if (window.innerWidth > 600) {
 
+        animationTimeout = setTimeout(() => {
+
         // arEnthusiastImages.style.display = 'block';
         uxDesignerLink.style.opacity = 0.2;
         creativeDeveloperLink.style.opacity = 0.2;
@@ -115,11 +125,14 @@ arEnthusiastLink.addEventListener('mouseenter', () => {
                 delay += 100;
         }
 
+    }, 150);
+
     }
 });
 
 arEnthusiastLink.addEventListener('mouseout', () => {
     if (window.innerWidth > 600) { 
+        clearTimeout(animationTimeout);
     
         uxDesignerLink.style.opacity = 1;
         creativeDeveloperLink.style.opacity = 1;
