@@ -44,7 +44,8 @@ p.large {
     font-size: calc(0.75rem + 0.75vw);
 }
 
-p {
+p,
+.contact a {
     font-size: calc(0.75rem + 0.5vw);
     font-weight: 300;
     line-height: 140%;
@@ -62,10 +63,11 @@ span {
     font-weight: 300;
 }
 
-/* About Contact Links */
+/* Iconography */
 
-.contact a {
-    font-size: calc(0.75rem + 0.5vw);
+.icon {
+    height: calc(0.5rem + 1vw);
+    min-height: 24px;
 }
 
 /* Play Gallery Labels */
@@ -142,9 +144,9 @@ span {
         font-size: 20px;
     }
 
-    p {
+    p,
+    .contact a {
         font-size: calc(0.75rem + 0.5vw); 
-        /* was 17px on case studies - may need to modify or clamp this */
     }
 
 }
@@ -162,15 +164,20 @@ span {
         font-size: 18px;
     }
 
-    p {
+    p,
+    .contact a {
         font-size: clamp(14px, calc(1rem + 0.5vw), calc(1rem + 0.5vw));
-        /* was 16px on case studies - may need to modify or clamp this */
     }
 
     .anchor-nav a {
         font-size: calc(1rem + 0.5vw);
         font-weight: 300;
         line-height: 140%;
+    }
+
+    section .icon {
+        height: calc(0.5rem + 1vw);
+        min-height: 16px;
     }
 
 }
@@ -183,7 +190,8 @@ span {
         font-size: calc(1rem + 5vw);
     }
 
-    p {
+    p,
+    .contact a {
         font-size: clamp(14px, calc(0.8rem + 0.5vw), calc(0.8rem + 0.5vw));
     }
 

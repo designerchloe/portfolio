@@ -1,0 +1,16 @@
+/* Container */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 40px;
+    align-items: center;
+    color: #BEB8AA;
+}
+
+/* Social Icons */
+
+#socials {
+    display: flex;
+    gap: 16px;
+}
