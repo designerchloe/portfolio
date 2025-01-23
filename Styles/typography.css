@@ -1,0 +1,204 @@
+/* Headings */
+
+h1.title-text {
+    font-weight: 500;
+    font-size: calc(3rem + 3vw);
+    letter-spacing: 0.05em;
+}
+
+h1 {
+    font-size: calc(0.75rem + 2vw);
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: calc(1rem + 1vw);
+    line-height: 110%;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: calc(1rem + 1.5vw);
+    line-height: 110%;
+}
+
+h4 {
+    font-size: calc(1rem + 0.5vw);
+}
+
+h5 {
+    font-size: calc(0.5rem + 0.75vw);
+}
+
+h6 {
+    font-size: clamp(14px, calc(0.5rem + 0.5vw), calc(0.5rem + 0.5vw));
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* Body Text */
+
+p.large {
+    font-size: calc(0.75rem + 0.75vw);
+}
+
+p {
+    font-size: calc(0.75rem + 0.5vw);
+    font-weight: 300;
+    line-height: 140%;
+}
+
+/* Tags & Callouts */
+
+span {
+    font-size: clamp(14px, calc(0.5rem + 0.5vw), calc(0.5rem + 0.5vw));
+    text-wrap: nowrap;
+}
+
+.tag {
+    color: #C1C1C1;
+    font-weight: 300;
+}
+
+/* About Contact Links */
+
+.contact a {
+    font-size: calc(0.75rem + 0.5vw);
+}
+
+/* Play Gallery Labels */
+
+.post-text p {
+    font-size: clamp(12px, calc(0.5rem + 0.5vw), calc(0.5rem + 0.5vw));
+}
+
+/* Case Study Anchor Nav */
+
+.anchor-nav a {
+    text-decoration: none;
+    font-size: calc(0.75rem + 0.5vw);
+    font-weight: 300;
+    line-height: 140%;
+    color: #BEB8AA;
+    transition: color 300ms ease-out;
+}
+
+.anchor-nav a:hover {
+    color: #EBE9E2;
+}
+
+/* Key Takeaways List */
+
+#key-takeaways ul {
+    list-style-position: inside;
+}
+
+#key-takeaways li {
+    font-size: clamp(14px, calc(0.5rem + 0.5vw), calc(0.5rem + 0.5vw));
+    font-weight: 300;
+}
+
+/* Shiny Links */
+
+@keyframes shine {
+    0% {
+      background-position: 100%;
+    }
+    to {
+      background-position: 0%;
+    }
+  }
+
+.shiny:hover {
+    background: linear-gradient(45deg, #fff 30%, #000 50%, #fff 75%);
+    background-size: 300% 100%;
+    background-clip: text;
+    -webkit-text-fill-color: rgba(255,255,255,0.4);
+    animation: shine 500ms linear;
+}
+
+/* Screens < 900px */
+
+@media only screen and (max-width: 900px) {
+
+    h1.title-text {
+        font-size: calc(2rem + 3vw);
+    }
+
+    h1 {
+        font-size: clamp(28px, calc(0.75rem + 3vw), calc(0.75rem + 3vw));
+        font-weight: 400;
+    }
+
+    h2 {
+        font-weight: 300;
+        font-size: calc(1rem + 1.5vw);
+        line-height: 100%;
+    }
+
+    p.large {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: calc(0.75rem + 0.5vw); 
+        /* was 17px on case studies - may need to modify or clamp this */
+    }
+
+}
+
+/* Screens < 600px */
+
+@media only screen and (max-width: 600px) {
+
+    h1.title-text {
+        font-size: calc(1rem + 6vw);
+        letter-spacing: normal;
+    }
+
+    p.large {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: clamp(14px, calc(1rem + 0.5vw), calc(1rem + 0.5vw));
+        /* was 16px on case studies - may need to modify or clamp this */
+    }
+
+    .anchor-nav a {
+        font-size: calc(1rem + 0.5vw);
+        font-weight: 300;
+        line-height: 140%;
+    }
+
+}
+
+/* Screens < 400px */
+
+@media only screen and (max-width: 400px) {
+
+    h1 {
+        font-size: calc(1rem + 5vw);
+    }
+
+    p {
+        font-size: clamp(14px, calc(0.8rem + 0.5vw), calc(0.8rem + 0.5vw));
+    }
+
+}
+
+/* Screens < 318px */
+
+@media only screen and (max-width: 318px) {
+
+    h1 {
+        font-size: calc(0.5rem + 6.5vw);
+    }
+
+    nav button{
+        font-size: calc(1.35rem + 3vw);
+    }
+
+}
