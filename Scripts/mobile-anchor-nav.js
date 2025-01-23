@@ -1,9 +1,5 @@
-
-
-// responsive anchor nav
+//SVG Element Creation
 const svgNS = "http://www.w3.org/2000/svg";
-
-// Create the SVG element
 const svgElement = document.createElementNS(svgNS, "svg");
 
 // Set the attributes for the SVG element
@@ -40,13 +36,17 @@ svgElement.appendChild(path1);
 svgElement.appendChild(path2);
 svgElement.appendChild(path3);
 
+
+//Selections & Definitions
+
 const header = document.querySelector('header');
 const main = document.querySelector('main');
 const nav = document.querySelector('.anchor-nav');
 const anchors = document.querySelectorAll('.anchor-nav a');
 let isMenuOpen = false;
 
-//initial check
+
+//Event Listeners
 
 window.addEventListener('load', () => {
     if (window.innerWidth < 900) {
@@ -64,7 +64,7 @@ window.addEventListener('load', () => {
     }
 });
 
-//interactions
+
 svgElement.addEventListener('click', () => {
     if (!isMenuOpen) {
         nav.style.opacity = 1;
@@ -74,9 +74,7 @@ svgElement.addEventListener('click', () => {
         isMenuOpen = false;
     }
     
-})
-
-//resize
+});
 
 window.addEventListener('resize', () => {
   if (window.innerWidth < 900) {
@@ -98,5 +96,3 @@ window.addEventListener('resize', () => {
     nav.style.opacity = 1;
   }
 });
-
-

@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#232323">
+
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="Assets/Favicon.png"/>
-    <script src="items.js" defer></script>
-    <script src="app.js" defer></script>
-    <script src="responsive.js" defer></script>
+    
+    <script src="Scripts/items.js" defer></script>
+    <script src="Scripts/hero.js" defer></script>
+    <script src="Scripts/tabs.js" defer></script>
+    <script src="Scripts/fade-in.js" defer></script>
+    <script src="Scripts/play-grid.js" defer></script>
+    <script src="Scripts/resize-videos.js" defer></script>
+
     <title>Chloe Allard, UX Designer</title>
 </head>
 <body>
     <header>
-        <img id="logo" src="Assets/Logo.svg">
+        <img id="logo" src="Assets/Logo.svg" alt="Butterfly logo reading 'Chloe Allard'" tabindex=0>
         <div id="title">
             <div class="mobile-image-container" id="top">
                 <div class="mobile-sub-container">
@@ -25,7 +31,7 @@
                 </div>
             </div>
             <div id="header-1">
-                <h1 class="title-text" id="ux-designer-link">UX Designer,</h1>
+                <h1 class="title-text" id="ux-designer-link" tabindex=0>UX Designer,</h1>
                 <div id="ux-designer-images">
                     <img id="ux-design-1" src="Assets/UXDesigner/drag-widget.png" class="header-img tall" alt="UX design pattern example of a widget being dragged by a user's mouse." />
                     <img id="ux-design-2" src="Assets/UXDesigner/graph.png" class="header-img square" alt="UI design of a graph widget." />
@@ -34,7 +40,7 @@
                 </div>
             </div>
             <div id="header-2">
-                <h1 class="title-text" id="creative-developer-link">Creative Developer,</h1>
+                <h1 class="title-text" id="creative-developer-link" tabindex=0>Creative Developer,</h1>
                 <div id="creative-developer-images">
                     <img id="creative-dev-1" src="Assets/CreativeDeveloper/runaway-links-small.gif" class="header-img large" alt="Animated experiment made using javascript where a contact link runs away from the user's mouse." />
                     <img id="creative-dev-2" src="Assets/CreativeDeveloper/code.png" class="header-img square" alt="Code that represents a function called 'Runaway Links'." />
@@ -43,14 +49,14 @@
                 </div>
             </div>
             <div id="header-3">
-                <h1 class="title-text" id="ar-enthusiast-link">& AR Enthusiast.</h1>
+                <h1 class="title-text" id="ar-enthusiast-link" tabindex=0>& AR Enthusiast.</h1>
                 <div id="ar-enthusiast-images">
                     <img id="ar-enthusiast-1" src="Assets/AREnthusiast/ar-sculpture.gif" class="header-img large" alt="An augmented reality sculpture that looks like a pair of hands reaching for each other from one angle, and random floating blocks from another angle." />
                     <img id="ar-enthusiast-2" src="Assets/AREnthusiast/3d-icon.gif" class="header-img tall" alt="A 3d icon of Chloe Allard's butterfly logo." />
                     <img id="ar-enthusiast-4" src="Assets/AREnthusiast/drawing-with-type.gif" class="header-img tall" alt="An experiment in augmented reality where a user draws with typography in 3d space using the phrase 'Let it Happen'." />
                 </div>
             </div>
-            <div id="header-4"><p class="title-text" id="about-paragraph">Infusing design system expertise, accessibility, and innovation into web products during the day—and crafting joyful code & fiber arts experiments at night. Currently designing at <a class="shiny" href="https://zerodegreesinc.com/" target="_blank">ZeroDegrees.</a></p></div>
+            <div id="header-4"><p class="title-text" id="about-paragraph">Infusing design system expertise, accessibility, and innovation into web products during the day—and crafting joyful code & fiber arts experiments at night. Currently designing at <a class="shiny" href="https://zerodegreesinc.com/" target="_blank" tabindex=0>ZeroDegrees.</a></p></div>
             <div class="mobile-image-container" id="bottom">
                 <div class="mobile-sub-container">
                     <img id="m-3" src="Assets/UXDesigner/checkboxes.gif" class="header-img tall" alt="A figma checkbox component being modified by a moving cursor." />
@@ -62,9 +68,9 @@
 
     <main>
         <nav>
-            <a class="work selected">Work</a>
-            <a class="play">Play</a>
-            <a class="about">About</a>
+            <button class="work selected" tabindex=0>Work</button>
+            <button class="play" tabindex=0>Play</button>
+            <button class="about" tabindex=0>About</button>
         </nav>
 
             <section id="play">

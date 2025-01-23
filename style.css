@@ -240,16 +240,18 @@ nav::-webkit-scrollbar {
     display: none;  /* Safari and Chrome */
 }
 
-nav a{
+nav button{
     font-size: calc(1.5rem + 3vw);
     font-weight: 500;
     opacity: 0.3;
     letter-spacing: 0.02em;
     text-decoration: none;
     transition: opacity 300ms ease-out;
+    background-color: rgba(0,0,0,0);
+    border: 0px solid black;
 }
 
-nav a:hover {
+nav button:hover {
     opacity: 0.6;
     cursor: pointer;
 }

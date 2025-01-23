@@ -1,4 +1,4 @@
-//arrows 
+//Functions
 
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
@@ -7,9 +7,9 @@ function isElementInViewport(el) {
       rect.top <= 300 &&
       rect.top >= (parseInt(`-${height}`)) + 200
     );
-  }
+};
 
-  function handler() {
+function handler() {
     if (isElementInViewport(introElement)) {
         introArrow.style.opacity = '1'; 
       } else {
@@ -63,10 +63,10 @@ function isElementInViewport(el) {
       } else {
         theDifferenceArrow.style.opacity = '0'; 
       };
-  }
+};
   
-//   const targetElement = document.getElementById('context'); 
-//   const elementToShow = document.getElementById('a-context'); 
+
+//Selections & Definitions
 
 const introElement = document.getElementById('intro');
 const introArrow = document.getElementById('a-intro');
@@ -87,31 +87,7 @@ const finalDesignsArrow = document.getElementById('a-final-designs');
 const theDifferenceElement = document.getElementById('the-difference');
 const theDifferenceArrow = document.getElementById('a-the-difference');
   
+
+//Event Listener
+
 window.addEventListener('scroll', handler);
-
-  
-//cursor
-
-// let promo = document.querySelector('.promo-area');
-// let mouseCursor = document.querySelector('#cursor');
-// mouseCursor.style.display = 'none';
-
-// function cursor(e) {
-//     mouseCursor.style.display = '';
-//     mouseCursor.classList.remove('fade-out');
-//     mouseCursor.classList.add('fade');
-//     mouseCursor.style.opacity = '1';
-//     mouseCursor.style.top = e.pageY + 'px';
-//     mouseCursor.style.left = e.pageX + 'px';
-// };
-
-// function disappear() {
-//     mouseCursor.style.display = '';
-//     mouseCursor.classList.remove('fade');
-//     mouseCursor.classList.add('fade-out');
-//     mouseCursor.style.opacity = "0";
-// }
-
-// promo.addEventListener('mousemove', cursor);
-
-// promo.addEventListener('mouseout', disappear);
