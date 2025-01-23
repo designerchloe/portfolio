@@ -1,0 +1,67 @@
+/* Container */
+
+.project {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 64px;
+    margin: 64px 0 88px 0;
+}
+
+.left {
+    flex-direction: row-reverse;
+}
+
+.project:hover picture {
+    transform: scale(1.02);
+}
+
+/* Typographic Layouts & Styling */
+
+#work a {
+    text-decoration: none;
+}
+
+.project-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.project-text p {
+    max-width: 900px;
+}
+
+.tag-container {
+    display: flex;
+    gap: 12px;
+    margin: 4px 0;
+}
+
+/* Imagery */
+
+.project-img {
+    aspect-ratio: 16 / 9;
+    width: 75%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Fade in Animation */
+
+@keyframes fadeIn {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.fade-in {
+    animation: 0.75s both fadeIn;
+}

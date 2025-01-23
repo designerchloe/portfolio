@@ -4,6 +4,7 @@
     --font-family: "DM Sans", sans-serif;
 
     /* colors */
+    --color-transparent: rgba(0,0,0,0);
     --color-surface-primary: #323232;
     --color-text-primary: #EBE9E2;
   }

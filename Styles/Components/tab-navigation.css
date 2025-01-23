@@ -1,0 +1,36 @@
+/* Container */
+
+nav {
+    display: flex;
+    gap: calc(0.75rem + 1vw);
+}
+
+nav::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+/* Buttons */
+
+nav button{
+    font-size: calc(1.5rem + 3vw);
+    font-weight: 500;
+    opacity: 0.3;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: opacity 300ms ease-out;
+    background-color: var(--color-transparent);
+    border: 0px solid var(--color-transparent);
+}
+
+nav button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.selected {
+    opacity: 1;
+}
+
+.selected:hover {
+    opacity: 1;
+}
