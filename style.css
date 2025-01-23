@@ -7,9 +7,7 @@ header {
     background: linear-gradient(180deg, #232323 0%, #323232 100%);
 }
 
-#logo {
-    height: 24px;
-}
+
 
 #title {
     height: 100%;
@@ -180,16 +178,10 @@ main {
 }
 
 
-.about-img {
+/* .about-img {
     width: 50%;
     border-radius: 8px;
 }
-
-.contact {
-    width: 100%;
-}
-
-/* about */
 
 .contact {
     display: flex;
@@ -202,7 +194,7 @@ main {
     display: flex;
     align-items: center;
     gap: 8px;
-}
+} */
 
 
 /* media queries */
@@ -290,9 +282,9 @@ main {
         margin: 0 0 18px 36vw;
     }
 
-    .about-img {
+    /* .about-img {
         width: 100%;
-    }
+    } */
 
     .header-img {
         width: calc(3rem + 3vw);
@@ -446,9 +438,7 @@ main {
         left: 10%;
     }
 
-    footer {
-        padding: 20px;
-    }
+    
     
 
 }

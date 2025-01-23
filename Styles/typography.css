@@ -38,6 +38,10 @@ h6 {
     letter-spacing: 1px;
 }
 
+#logo {
+    height: 24px;
+}
+
 /* Body Text */
 
 p.large {

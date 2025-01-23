@@ -18,10 +18,6 @@ header {
     justify-content: space-between;
 }
 
-#logo {
-    height: 24px;
-}
-
 .icon {
     transition: transform 300ms ease-out;
 }
