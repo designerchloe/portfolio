@@ -189,64 +189,6 @@ main {
     width: 100%;
 }
 
-.overall-archive-container {
-    height: max-content;
-}
-
-.archive-container {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    width: 100vw;
-    position: relative;
-    left: -64px;
-    height: max-content;
-    padding: 32px 0;
-}
-
-.archive-container::-webkit-scrollbar {
-    display: none;
-}
-
-.archive-item {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: min-content;
-}
-
-.archive-item span {
-    width: 100%;
-    text-wrap: wrap;
-}
-
-.archive {
-    display: flex;
-    gap: 32px;
-    padding: 0 64px;
-    width: max-content;
-    height: max-content;
-}
-
-.archive-img {
-    height: 31vw;
-    border-radius: 8px;
-    overflow: hidden;
-    max-height: 500px;
-    min-height: 300px;
-}
-
-.archive .wide {
-    aspect-ratio: 16 / 9;
-}
-
-.archive .square {
-    aspect-ratio: 1 / 1;
-}
-
-.archive .tall {
-    aspect-ratio: 4 / 5;
-}
-
 /* play section */
 
 .container {
@@ -342,24 +284,8 @@ footer {
         margin: 0 auto;
     }
 
-    .project {
-        gap: 80px;
-    }
-
-    .project-img {
-        width: 85%;
-    }
-
     #header-4 {
         padding-top: 28px;
-    }
-
-    .archive-container {
-        left: -150px;
-    }
-
-    .archive {
-        padding: 0 150px;
     }
 }
 
@@ -416,10 +342,6 @@ footer {
         top: 4vw;
         left: 20vw;
     }
-
-    .project-img {
-        width: 60%;
-    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -437,34 +359,6 @@ footer {
     #header-4 {
         width: 50vw;
         margin: 0 0 18px 36vw;
-    }
-
-    .project {
-        flex-direction: column-reverse;
-        gap: 16px;
-        margin: 44px 0 56px 0;
-    }
-
-    .project-text {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    }
-    
-    .tag-container {
-        display: flex;
-        gap: 12px;
-        margin: 4px 0;
-        overflow: scroll;
-    }
-
-    .tag-container::-webkit-scrollbar {
-        display: none;
-    }
-    
-    .project-img {
-        width: 100%;
     }
 
     .about-img {
@@ -626,29 +520,6 @@ footer {
     footer {
         padding: 20px;
     }
-
-    .archive .wide {
-        aspect-ratio: 4 / 5;
-    }
-    
-    .archive .square {
-        aspect-ratio: 4 / 5;
-    }
-
-    .archive-container {
-        left: -20px;
-    }
-
-    .archive {
-        padding: 0 20px;
-        gap: 20px;
-    }
-
-    .archive-img {
-        height: 88vw;
-        min-height: 320px;
-        width: min-content;
-    }
     
 
 }
@@ -681,10 +552,6 @@ footer {
         padding: 20px;
         height: 70vh;
         min-height: 700px;
-    }
-
-    nav {
-        overflow: scroll;
     }
 }
 

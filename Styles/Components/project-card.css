@@ -65,3 +65,61 @@
 .fade-in {
     animation: 0.75s both fadeIn;
 }
+
+/* Screens > 1700px */
+
+@media only screen and (min-width: 1700px) {
+
+    .project {
+        gap: 80px;
+    }
+
+    .project-img {
+        width: 85%;
+    }
+
+}
+
+/* Screens < 1200px */
+
+@media only screen and (max-width: 1200px) {
+
+    .project-img {
+        width: 60%;
+    }
+
+}
+
+/* Screens < 900px */
+
+@media only screen and (max-width: 900px) {
+
+    .project {
+        flex-direction: column-reverse;
+        gap: 16px;
+        margin: 44px 0 56px 0;
+    }
+
+    .project-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .tag-container {
+        display: flex;
+        gap: 12px;
+        margin: 4px 0;
+        overflow: scroll;
+    }
+
+    .tag-container::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .project-img {
+        width: 100%;
+    }
+
+}

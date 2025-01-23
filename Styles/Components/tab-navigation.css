@@ -34,3 +34,12 @@ nav button:hover {
 .selected:hover {
     opacity: 1;
 }
+
+/* Screens < 318px */
+
+@media only screen and (max-width: 318px) {
+
+    nav {
+        overflow: scroll;
+    }
+}
