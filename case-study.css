@@ -1,18 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "DM Sans", sans-serif;
-    color: #EBE9E2;
-}
-
 html {
     scroll-behavior: smooth;
     overscroll-behavior: none;
-}
-
-body {
-    background-color: #323232;
 }
 
 #main-container {
