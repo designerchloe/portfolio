@@ -1,0 +1,58 @@
+.promo-area {
+    z-index: 4;
+}
+
+#promo {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+}
+
+#promo-text {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    gap: 8px;
+    max-width: 1200px;
+}
+
+#promo picture {
+    width: 25%;
+    border-radius: 8px;
+    min-width: 180px;
+}
+
+/* Screens < 900px */
+
+@media only screen and (max-width: 900px) {
+
+    #promo {
+        padding: 32px;
+    }
+
+    #promo picture {
+        min-width: 150px;
+    }
+
+}
+
+/* Screens < 600px */
+
+@media only screen and (max-width: 600px) {
+
+    #promo {
+        flex-direction: column;
+        gap: 24px;
+        padding-bottom: 36px;
+    }
+
+    #promo picture {
+        width: 100%;
+    }
+
+    #promo-text {
+        width: 100%;
+    }
+
+}

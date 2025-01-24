@@ -8,6 +8,11 @@ footer {
     color: #BEB8AA;
 }
 
+footer.case-study {
+    position: relative;
+    z-index: 3;
+}
+
 /* Social Icons */
 
 #socials {
@@ -22,5 +27,5 @@ footer {
     footer {
         padding: 20px;
     }
-    
+
 }

@@ -10,17 +10,35 @@ body {
     background-color: var(--color-surface-primary);
 }
 
-main {
+main.home {
     padding: 0 64px;
+}
+
+main.case-study {
+    padding: 0 64px 64px 64px;
+    gap: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* Screens > 1700px */
 
 @media only screen and (min-width: 1700px) {
     
-    main {
+    main.home {
         max-width: 90vw;
         margin: 0 auto;
+    }
+
+}
+
+/* Screens < 900px */
+
+@media only screen and (max-width: 900px) {
+    
+    main.case-study {
+        justify-content: center;
     }
 
 }
@@ -29,8 +47,12 @@ main {
 
 @media only screen and (max-width: 600px) {
 
-    main {
+    main.home {
         padding: 20px;
     }
-    
+
+    main.case-study {
+        padding: 0 20px 20px 20px;
+    }
+
 }
