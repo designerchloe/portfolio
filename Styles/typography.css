@@ -63,7 +63,7 @@ span {
 }
 
 .tag {
-    color: #C1C1C1;
+    color: var(--color-text-secondary);
     font-weight: 300;
 }
 
@@ -87,12 +87,12 @@ span {
     font-size: calc(0.75rem + 0.5vw);
     font-weight: 300;
     line-height: 140%;
-    color: #BEB8AA;
+    color: var(--color-text-tertiary);
     transition: color 300ms ease-out;
 }
 
 .anchor-nav a:hover {
-    color: #EBE9E2;
+    color: var(--color-text-primary);
 }
 
 /* Key Takeaways List */

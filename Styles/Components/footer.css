@@ -5,12 +5,15 @@ footer {
     justify-content: space-between;
     padding: 24px 40px;
     align-items: center;
-    color: #BEB8AA;
 }
 
 footer.case-study {
     position: relative;
     z-index: 3;
+}
+
+footer span {
+    color: var(--color-text-tertiary);
 }
 
 /* Social Icons */

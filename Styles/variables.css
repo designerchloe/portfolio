@@ -5,6 +5,16 @@
 
     /* colors */
     --color-transparent: rgba(0,0,0,0);
+    
     --color-surface-primary: #323232;
+    --color-surface-secondary: #232323;
+    --color-surface-light: #3A3A3A;
+    --color-surface-dark: #2C2C2C;
+    
+    --color-border-dark: #232323;
+    
     --color-text-primary: #EBE9E2;
+    --color-text-secondary: #C1C1C1;
+    --color-text-tertiary: #BEB8AA;
+
   }
