@@ -16,5 +16,7 @@
     --color-text-primary: #EBE9E2;
     --color-text-secondary: #C1C1C1;
     --color-text-tertiary: #BEB8AA;
+    --color-text-deselected: #7B7B7B;
+    --color-text-hover: #9B9B9B;
 
   }

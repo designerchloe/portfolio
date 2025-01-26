@@ -14,25 +14,25 @@ nav::-webkit-scrollbar {
 nav button{
     font-size: calc(1.5rem + 3vw);
     font-weight: 500;
-    opacity: 0.3;
     letter-spacing: 0.02em;
     text-decoration: none;
-    transition: opacity 300ms ease-out;
+    transition: color 300ms ease-out;
     background-color: var(--color-transparent);
+    color: var(--color-text-deselected);
     border: 0px solid var(--color-transparent);
 }
 
 nav button:hover {
-    opacity: 0.6;
+    color: var(--color-text-hover);
     cursor: pointer;
 }
 
 .selected {
-    opacity: 1;
+    color: var(--color-text-primary);
 }
 
 .selected:hover {
-    opacity: 1;
+    color: var(--color-text-primary);
 }
 
 /* Screens < 318px */
